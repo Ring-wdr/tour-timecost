@@ -44,6 +44,7 @@ export const compareInputSchema = z.object({
   prefs: z.array(z.enum(PREFS)).default([]),
   pet: z.boolean().default(false),
   maxOneWayKm: z.number().min(10).max(600).optional(),
+  minOneWayKm: z.number().min(0).max(300).optional(),
   weights: z
     .object({ time: z.number(), cost: z.number(), poi: z.number() })
     .default({ ...config.defaults.weights }),
@@ -69,6 +70,7 @@ export function inputToSearchParams(i: CompareInput): URLSearchParams {
   if (i.lodgingPerNight !== undefined) p.set("lodging", String(i.lodgingPerNight));
   if (i.dailySpendPerPerson !== undefined) p.set("spend", String(i.dailySpendPerPerson));
   if (i.maxOneWayKm !== undefined) p.set("maxkm", String(i.maxOneWayKm));
+  if (i.minOneWayKm !== undefined) p.set("minkm", String(i.minOneWayKm));
   return p;
 }
 
@@ -88,6 +90,7 @@ export function searchParamsToInput(sp: URLSearchParams): CompareInput {
     prefs: (sp.get("prefs") ?? "").split(",").filter(Boolean),
     pet: sp.get("pet") === "1",
     maxOneWayKm: num("maxkm"),
+    minOneWayKm: num("minkm"),
     weights: w.length === 3 && w.every(Number.isFinite) ? { time: w[0], cost: w[1], poi: w[2] } : undefined,
   });
 }
@@ -97,4 +100,11 @@ export function upcomingSaturday(now = new Date()): string {
   const kst = new Date(now.getTime() + 9 * 3600_000);
   const add = (6 - kst.getUTCDay() + 7) % 7;
   return new Date(kst.getTime() + add * 86_400_000).toISOString().slice(0, 10);
+}
+
+/** Next.js searchParams 객체 → URLSearchParams */
+export function toURLSearchParams(sp: Record<string, string | string[] | undefined>): URLSearchParams {
+  const out = new URLSearchParams();
+  for (const [k, v] of Object.entries(sp)) if (typeof v === "string") out.set(k, v);
+  return out;
 }

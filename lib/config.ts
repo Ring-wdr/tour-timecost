@@ -26,6 +26,8 @@ export const config = {
   opinet: { dailyLimit: 1_000 },
   search: {
     maxOneWayKm: { daytrip: 250, overnight: 400 },
+    /** 출발지와 너무 가까운 곳(같은 생활권)은 "여행지" 비교에서 뺀다 */
+    minOneWayKm: 20,
     resultCacheMinutes: 10,
   },
   defaults: {

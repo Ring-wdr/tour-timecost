@@ -2,7 +2,7 @@ import fs from "node:fs";
 import path from "node:path";
 import { z } from "zod";
 import { config } from "@/lib/config";
-import { env, useTourMock } from "@/lib/env";
+import { env, isTourMock } from "@/lib/env";
 import {
   areaItem,
   envelope,
@@ -135,6 +135,6 @@ export class MockTourClient implements TourClient {
 }
 
 export function createTourClient(): TourClient {
-  if (useTourMock()) return new MockTourClient();
+  if (isTourMock()) return new MockTourClient();
   return new LiveTourClient(env.TOUR_API_KEY!);
 }

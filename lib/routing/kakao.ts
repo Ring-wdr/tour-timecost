@@ -8,7 +8,7 @@
  */
 import { z } from "zod";
 import { config } from "@/lib/config";
-import { env, useKakaoMock } from "@/lib/env";
+import { env, isKakaoMock } from "@/lib/env";
 import { haversineKm, isJeju, type LonLat } from "@/lib/geo";
 import { addUsage, getUsage } from "@/lib/usage";
 
@@ -172,5 +172,5 @@ export class MockRouter implements Router {
 }
 
 export function createRouter(): Router {
-  return useKakaoMock() ? new MockRouter() : new LiveRouter(env.KAKAO_REST_KEY!);
+  return isKakaoMock() ? new MockRouter() : new LiveRouter(env.KAKAO_REST_KEY!);
 }

@@ -2,7 +2,7 @@ import { NextResponse } from "next/server";
 import { sql } from "drizzle-orm";
 import { config } from "@/lib/config";
 import { db } from "@/lib/db";
-import { useKakaoMock, useTourMock } from "@/lib/env";
+import { isKakaoMock, isTourMock } from "@/lib/env";
 import { lastSuccessfulRuns } from "@/lib/ingest";
 import { kstDay, usageToday } from "@/lib/usage";
 
@@ -28,7 +28,7 @@ export async function GET() {
   return NextResponse.json({
     ok: true,
     db: "up",
-    sources: { tour: useTourMock() ? "mock" : "live", routing: useKakaoMock() ? "mock" : "live" },
+    sources: { tour: isTourMock() ? "mock" : "live", routing: isKakaoMock() ? "mock" : "live" },
     lastIngest: Object.fromEntries(runs.map((r) => [r.job, { finishedAt: r.finished_at, source: r.source }])),
     usageToday: {
       day: kstDay(),

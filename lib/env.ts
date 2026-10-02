@@ -15,5 +15,5 @@ const blankToUndefined = (v: Record<string, string | undefined>) =>
 
 export const env = schema.parse(blankToUndefined(process.env));
 
-export const useTourMock = () => !env.TOUR_API_KEY || env.TOUR_MOCK === "1";
-export const useKakaoMock = () => !env.KAKAO_REST_KEY;
+export const isTourMock = () => !env.TOUR_API_KEY || env.TOUR_MOCK === "1";
+export const isKakaoMock = () => !env.KAKAO_REST_KEY;

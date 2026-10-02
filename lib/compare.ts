@@ -10,11 +10,11 @@ import { config } from "@/lib/config";
 import { PREF_TYPES, type CompareInput } from "@/lib/compare-input";
 import { estimateCost, tripDays, type CostBreakdown } from "@/lib/cost";
 import { db } from "@/lib/db";
-import { roundCoord, type LonLat } from "@/lib/geo";
+import { roundCoord } from "@/lib/geo";
 import { latestGasolinePrice } from "@/lib/jobs";
 import { createRouter, QuotaGuardError, type DirectionsSummary, type RouteSummary, type Router } from "@/lib/routing/kakao";
 import { scoreCandidates, type Scored } from "@/lib/scoring";
-import { useTourMock } from "@/lib/env";
+import { isTourMock } from "@/lib/env";
 
 export type RouteSource = "live" | "mock" | "estimate";
 
@@ -50,11 +50,12 @@ export interface CompareResult {
     dailySpendPerPerson: number;
     dailySpendSource: "user" | "default";
     maxOneWayKm: number;
+    minOneWayKm: number;
     festivalBonus: number;
     tripDates: string[];
     weekendDeparture: string | null;
   };
-  excluded: { byDistance: number; unreachable: string[] };
+  excluded: { byDistance: number; tooClose: number; unreachable: string[] };
   calls: Record<string, { cached: number; fetched: number; failed: number; blocked: number }>;
   candidates: Candidate[];
 }
@@ -83,7 +84,15 @@ function newCounter() {
 export function compareCacheKey(input: CompareInput, routingSource: string) {
   const { weights: _w, origin, ...rest } = input;
   void _w;
-  return cacheKey("compare", { ...rest, origin: roundCoord(origin), routingSource });
+  // 기본값이 바뀌면 캐시도 갈리도록 해석된 값과 버전을 키에 넣는다
+  return cacheKey("compare", {
+    v: 2,
+    ...rest,
+    origin: roundCoord(origin),
+    routingSource,
+    minKm: rest.minOneWayKm ?? config.search.minOneWayKm,
+    maxKm: rest.maxOneWayKm ?? config.search.maxOneWayKm[rest.tripType],
+  });
 }
 
 export async function runCompare(input: CompareInput, router: Router = createRouter()): Promise<CompareResult> {
@@ -119,9 +128,11 @@ export async function runCompare(input: CompareInput, router: Router = createRou
         ORDER BY p.content_id LIMIT 1) AS image_url
     FROM regions r WHERE r.is_candidate
   `);
-  const near = rows.filter((r) => r.straight_km <= maxKm);
-  const byDistance = rows.length - near.length;
-  console.log(`[compare] 후보 ${rows.length}곳 중 직선 ${maxKm}km 이내 ${near.length}곳`);
+  const minKm = input.minOneWayKm ?? config.search.minOneWayKm;
+  const near = rows.filter((r) => r.straight_km <= maxKm && r.straight_km >= minKm);
+  const tooClose = rows.filter((r) => r.straight_km < minKm).length;
+  const byDistance = rows.length - near.length - tooClose;
+  console.log(`[compare] 후보 ${rows.length}곳 중 직선 ${minKm}~${maxKm}km ${near.length}곳`);
 
   // 2) 다중 목적지 (캐시 우선, 미스만 30개씩 호출)
   const destKey = (code: string) => cacheKey("kakao:destinations", { src: router.source, o: origin, d: code });
@@ -264,7 +275,7 @@ export async function runCompare(input: CompareInput, router: Router = createRou
     generatedAt: new Date().toISOString(),
     fromCache: false,
     stale: anyStale || candidates.some((c) => c.route.stale),
-    sources: { tour: useTourMock() ? "mock" : "live", routing: router.source },
+    sources: { tour: isTourMock() ? "mock" : "live", routing: router.source },
     assumptions: {
       fuelPricePerLiter: fuelPrice,
       fuelPriceSource,
@@ -274,11 +285,12 @@ export async function runCompare(input: CompareInput, router: Router = createRou
       dailySpendPerPerson: dailySpend,
       dailySpendSource: input.dailySpendPerPerson === undefined ? "default" : "user",
       maxOneWayKm: maxKm,
+      minOneWayKm: minKm,
       festivalBonus,
       tripDates,
       weekendDeparture,
     },
-    excluded: { byDistance, unreachable },
+    excluded: { byDistance, tooClose, unreachable },
     calls,
     candidates,
   };
