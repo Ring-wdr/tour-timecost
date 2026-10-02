@@ -1,0 +1,29 @@
+{
+ "response": {
+  "header": {
+   "resultCode": "0000",
+   "resultMsg": "OK"
+  },
+  "body": {
+   "items": {
+    "item": {
+     "contentid": "9000000",
+     "contenttypeid": "12",
+     "title": "[합성] 종로구 관광지 1",
+     "addr1": "종로구 (합성 주소)",
+     "addr2": "",
+     "mapx": "126.9342766708",
+     "mapy": "37.5605148457",
+     "firstimage": "/placeholder-synthetic.svg",
+     "firstimage2": "",
+     "lDongRegnCd": "11",
+     "lDongSignguCd": "110",
+     "modifiedtime": "20260901120000"
+    }
+   },
+   "numOfRows": 10,
+   "pageNo": 1,
+   "totalCount": 1
+  }
+ }
+}

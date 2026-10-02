@@ -1,0 +1,323 @@
+{
+ "response": {
+  "header": {
+   "resultCode": "0000",
+   "resultMsg": "OK"
+  },
+  "body": {
+   "items": {
+    "item": [
+     {
+      "lDongRegnCd": "11",
+      "lDongRegnNm": "서울특별시",
+      "lDongSignguCd": "110",
+      "lDongSignguNm": "종로구"
+     },
+     {
+      "lDongRegnCd": "11",
+      "lDongRegnNm": "서울특별시",
+      "lDongSignguCd": "680",
+      "lDongSignguNm": "강남구"
+     },
+     {
+      "lDongRegnCd": "11",
+      "lDongRegnNm": "서울특별시",
+      "lDongSignguCd": "740",
+      "lDongSignguNm": "강동구"
+     },
+     {
+      "lDongRegnCd": "28",
+      "lDongRegnNm": "인천광역시",
+      "lDongSignguCd": "710",
+      "lDongSignguNm": "강화군"
+     },
+     {
+      "lDongRegnCd": "28",
+      "lDongRegnNm": "인천광역시",
+      "lDongSignguCd": "720",
+      "lDongSignguNm": "옹진군"
+     },
+     {
+      "lDongRegnCd": "41",
+      "lDongRegnNm": "경기도",
+      "lDongSignguCd": "820",
+      "lDongSignguNm": "가평군"
+     },
+     {
+      "lDongRegnCd": "41",
+      "lDongRegnNm": "경기도",
+      "lDongSignguCd": "830",
+      "lDongSignguNm": "양평군"
+     },
+     {
+      "lDongRegnCd": "41",
+      "lDongRegnNm": "경기도",
+      "lDongSignguCd": "650",
+      "lDongSignguNm": "포천시"
+     },
+     {
+      "lDongRegnCd": "41",
+      "lDongRegnNm": "경기도",
+      "lDongSignguCd": "480",
+      "lDongSignguNm": "파주시"
+     },
+     {
+      "lDongRegnCd": "41",
+      "lDongRegnNm": "경기도",
+      "lDongSignguCd": "111",
+      "lDongSignguNm": "수원시 장안구"
+     },
+     {
+      "lDongRegnCd": "41",
+      "lDongRegnNm": "경기도",
+      "lDongSignguCd": "590",
+      "lDongSignguNm": "화성시"
+     },
+     {
+      "lDongRegnCd": "51",
+      "lDongRegnNm": "강원특별자치도",
+      "lDongSignguCd": "110",
+      "lDongSignguNm": "춘천시"
+     },
+     {
+      "lDongRegnCd": "51",
+      "lDongRegnNm": "강원특별자치도",
+      "lDongSignguCd": "150",
+      "lDongSignguNm": "강릉시"
+     },
+     {
+      "lDongRegnCd": "51",
+      "lDongRegnNm": "강원특별자치도",
+      "lDongSignguCd": "210",
+      "lDongSignguNm": "속초시"
+     },
+     {
+      "lDongRegnCd": "51",
+      "lDongRegnNm": "강원특별자치도",
+      "lDongSignguCd": "760",
+      "lDongSignguNm": "평창군"
+     },
+     {
+      "lDongRegnCd": "51",
+      "lDongRegnNm": "강원특별자치도",
+      "lDongSignguCd": "720",
+      "lDongSignguNm": "홍천군"
+     },
+     {
+      "lDongRegnCd": "51",
+      "lDongRegnNm": "강원특별자치도",
+      "lDongSignguCd": "770",
+      "lDongSignguNm": "정선군"
+     },
+     {
+      "lDongRegnCd": "51",
+      "lDongRegnNm": "강원특별자치도",
+      "lDongSignguCd": "750",
+      "lDongSignguNm": "영월군"
+     },
+     {
+      "lDongRegnCd": "51",
+      "lDongRegnNm": "강원특별자치도",
+      "lDongSignguCd": "190",
+      "lDongSignguNm": "태백시"
+     },
+     {
+      "lDongRegnCd": "43",
+      "lDongRegnNm": "충청북도",
+      "lDongSignguCd": "800",
+      "lDongSignguNm": "단양군"
+     },
+     {
+      "lDongRegnCd": "43",
+      "lDongRegnNm": "충청북도",
+      "lDongSignguCd": "150",
+      "lDongSignguNm": "제천시"
+     },
+     {
+      "lDongRegnCd": "43",
+      "lDongRegnNm": "충청북도",
+      "lDongSignguCd": "130",
+      "lDongSignguNm": "충주시"
+     },
+     {
+      "lDongRegnCd": "43",
+      "lDongRegnNm": "충청북도",
+      "lDongSignguCd": "760",
+      "lDongSignguNm": "괴산군"
+     },
+     {
+      "lDongRegnCd": "44",
+      "lDongRegnNm": "충청남도",
+      "lDongSignguCd": "150",
+      "lDongSignguNm": "공주시"
+     },
+     {
+      "lDongRegnCd": "44",
+      "lDongRegnNm": "충청남도",
+      "lDongSignguCd": "760",
+      "lDongSignguNm": "부여군"
+     },
+     {
+      "lDongRegnCd": "44",
+      "lDongRegnNm": "충청남도",
+      "lDongSignguCd": "825",
+      "lDongSignguNm": "태안군"
+     },
+     {
+      "lDongRegnCd": "44",
+      "lDongRegnNm": "충청남도",
+      "lDongSignguCd": "180",
+      "lDongSignguNm": "보령시"
+     },
+     {
+      "lDongRegnCd": "30",
+      "lDongRegnNm": "대전광역시",
+      "lDongSignguCd": "140",
+      "lDongSignguNm": "중구"
+     },
+     {
+      "lDongRegnCd": "52",
+      "lDongRegnNm": "전북특별자치도",
+      "lDongSignguCd": "111",
+      "lDongSignguNm": "전주시 완산구"
+     },
+     {
+      "lDongRegnCd": "52",
+      "lDongRegnNm": "전북특별자치도",
+      "lDongSignguCd": "130",
+      "lDongSignguNm": "군산시"
+     },
+     {
+      "lDongRegnCd": "52",
+      "lDongRegnNm": "전북특별자치도",
+      "lDongSignguCd": "190",
+      "lDongSignguNm": "남원시"
+     },
+     {
+      "lDongRegnCd": "52",
+      "lDongRegnNm": "전북특별자치도",
+      "lDongSignguCd": "730",
+      "lDongSignguNm": "무주군"
+     },
+     {
+      "lDongRegnCd": "52",
+      "lDongRegnNm": "전북특별자치도",
+      "lDongSignguCd": "790",
+      "lDongSignguNm": "고창군"
+     },
+     {
+      "lDongRegnCd": "47",
+      "lDongRegnNm": "경상북도",
+      "lDongSignguCd": "130",
+      "lDongSignguNm": "경주시"
+     },
+     {
+      "lDongRegnCd": "47",
+      "lDongRegnNm": "경상북도",
+      "lDongSignguCd": "170",
+      "lDongSignguNm": "안동시"
+     },
+     {
+      "lDongRegnCd": "47",
+      "lDongRegnNm": "경상북도",
+      "lDongSignguCd": "280",
+      "lDongSignguNm": "문경시"
+     },
+     {
+      "lDongRegnCd": "47",
+      "lDongRegnNm": "경상북도",
+      "lDongSignguCd": "770",
+      "lDongSignguNm": "영덕군"
+     },
+     {
+      "lDongRegnCd": "47",
+      "lDongRegnNm": "경상북도",
+      "lDongSignguCd": "930",
+      "lDongSignguNm": "울진군"
+     },
+     {
+      "lDongRegnCd": "48",
+      "lDongRegnNm": "경상남도",
+      "lDongSignguCd": "220",
+      "lDongSignguNm": "통영시"
+     },
+     {
+      "lDongRegnCd": "48",
+      "lDongRegnNm": "경상남도",
+      "lDongSignguCd": "310",
+      "lDongSignguNm": "거제시"
+     },
+     {
+      "lDongRegnCd": "48",
+      "lDongRegnNm": "경상남도",
+      "lDongSignguCd": "840",
+      "lDongSignguNm": "남해군"
+     },
+     {
+      "lDongRegnCd": "48",
+      "lDongRegnNm": "경상남도",
+      "lDongSignguCd": "850",
+      "lDongSignguNm": "하동군"
+     },
+     {
+      "lDongRegnCd": "26",
+      "lDongRegnNm": "부산광역시",
+      "lDongSignguCd": "350",
+      "lDongSignguNm": "해운대구"
+     },
+     {
+      "lDongRegnCd": "46",
+      "lDongRegnNm": "전라남도",
+      "lDongSignguCd": "130",
+      "lDongSignguNm": "여수시"
+     },
+     {
+      "lDongRegnCd": "46",
+      "lDongRegnNm": "전라남도",
+      "lDongSignguCd": "150",
+      "lDongSignguNm": "순천시"
+     },
+     {
+      "lDongRegnCd": "46",
+      "lDongRegnNm": "전라남도",
+      "lDongSignguCd": "710",
+      "lDongSignguNm": "담양군"
+     },
+     {
+      "lDongRegnCd": "46",
+      "lDongRegnNm": "전라남도",
+      "lDongSignguCd": "780",
+      "lDongSignguNm": "보성군"
+     },
+     {
+      "lDongRegnCd": "46",
+      "lDongRegnNm": "전라남도",
+      "lDongSignguCd": "810",
+      "lDongSignguNm": "강진군"
+     },
+     {
+      "lDongRegnCd": "46",
+      "lDongRegnNm": "전라남도",
+      "lDongSignguCd": "110",
+      "lDongSignguNm": "목포시"
+     },
+     {
+      "lDongRegnCd": "50",
+      "lDongRegnNm": "제주특별자치도",
+      "lDongSignguCd": "110",
+      "lDongSignguNm": "제주시"
+     },
+     {
+      "lDongRegnCd": "50",
+      "lDongRegnNm": "제주특별자치도",
+      "lDongSignguCd": "130",
+      "lDongSignguNm": "서귀포시"
+     }
+    ]
+   },
+   "numOfRows": 51,
+   "pageNo": 1,
+   "totalCount": 51
+  }
+ }
+}

@@ -1,0 +1,3659 @@
+{
+ "response": {
+  "header": {
+   "resultCode": "0000",
+   "resultMsg": "OK"
+  },
+  "body": {
+   "items": {
+    "item": [
+     {
+      "contentid": "9000000",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9000002",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9000008",
+      "acmpyTypeCd": "동반불가",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9000010",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9000023",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9000024",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9000025",
+      "acmpyTypeCd": "동반불가",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9000030",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9000031",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9000034",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9000035",
+      "acmpyTypeCd": "동반불가",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9000036",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9000044",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9000048",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9000051",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9000055",
+      "acmpyTypeCd": "동반불가",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9000059",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9000072",
+      "acmpyTypeCd": "동반불가",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9000073",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9000078",
+      "acmpyTypeCd": "동반불가",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9000089",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9000097",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9000104",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9000109",
+      "acmpyTypeCd": "동반불가",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9000110",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9000114",
+      "acmpyTypeCd": "동반불가",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9000115",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9000117",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9000129",
+      "acmpyTypeCd": "동반불가",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9000132",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9000140",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9000143",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9000145",
+      "acmpyTypeCd": "동반불가",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9000156",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9000159",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9000161",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9000162",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9000164",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9000165",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9000180",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9000182",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9000186",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9000187",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9000188",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9000190",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9000191",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9000192",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9000194",
+      "acmpyTypeCd": "동반불가",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9000199",
+      "acmpyTypeCd": "동반불가",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9000202",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9000203",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9000206",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9000208",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9000211",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9000213",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9000215",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9000218",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9000219",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9000222",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9000225",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9000226",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9000232",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9000235",
+      "acmpyTypeCd": "동반불가",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9000236",
+      "acmpyTypeCd": "동반불가",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9000237",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9000253",
+      "acmpyTypeCd": "동반불가",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9000255",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9000257",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9000260",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9000263",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9000264",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9000270",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9000271",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9000272",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9000273",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9000275",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9000278",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9000296",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9000297",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9000302",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9000304",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9000309",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9000312",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9000314",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9000316",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9000322",
+      "acmpyTypeCd": "동반불가",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9000325",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9000329",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9000335",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9000336",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9000337",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9000339",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9000340",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9000341",
+      "acmpyTypeCd": "동반불가",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9000355",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9000356",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9000358",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9000359",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9000361",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9000363",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9000365",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9000375",
+      "acmpyTypeCd": "동반불가",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9000376",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9000377",
+      "acmpyTypeCd": "동반불가",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9000379",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9000381",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9000395",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9000396",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9000397",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9000398",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9000409",
+      "acmpyTypeCd": "동반불가",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9000410",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9000415",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9000419",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9000427",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9000430",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9000433",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9000435",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9000446",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9000449",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9000450",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9000452",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9000453",
+      "acmpyTypeCd": "동반불가",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9000456",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9000464",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9000466",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9000468",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9000474",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9000478",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9000479",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9000481",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9000482",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9000483",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9000485",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9000487",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9000492",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9000494",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9000501",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9000502",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9000504",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9000508",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9000512",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9000522",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9000527",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9000532",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9000533",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9000539",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9000542",
+      "acmpyTypeCd": "동반불가",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9000548",
+      "acmpyTypeCd": "동반불가",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9000549",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9000551",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9000556",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9000559",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9000562",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9000570",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9000578",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9000580",
+      "acmpyTypeCd": "동반불가",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9000582",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9000583",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9000584",
+      "acmpyTypeCd": "동반불가",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9000585",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9000588",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9000598",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9000600",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9000604",
+      "acmpyTypeCd": "동반불가",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9000605",
+      "acmpyTypeCd": "동반불가",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9000610",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9000616",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9000624",
+      "acmpyTypeCd": "동반불가",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9000626",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9000629",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9000630",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9000631",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9000632",
+      "acmpyTypeCd": "동반불가",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9000638",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9000641",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9000671",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9000674",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9000677",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9000679",
+      "acmpyTypeCd": "동반불가",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9000682",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9000689",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9000690",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9000691",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9000697",
+      "acmpyTypeCd": "동반불가",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9000700",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9000706",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9000707",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9000708",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9000709",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9000712",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9000714",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9000716",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9000719",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9000732",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9000733",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9000735",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9000737",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9000738",
+      "acmpyTypeCd": "동반불가",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9000741",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9000745",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9000747",
+      "acmpyTypeCd": "동반불가",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9000750",
+      "acmpyTypeCd": "동반불가",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9000758",
+      "acmpyTypeCd": "동반불가",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9000760",
+      "acmpyTypeCd": "동반불가",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9000762",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9000764",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9000770",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9000771",
+      "acmpyTypeCd": "동반불가",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9000784",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9000788",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9000789",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9000792",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9000798",
+      "acmpyTypeCd": "동반불가",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9000802",
+      "acmpyTypeCd": "동반불가",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9000807",
+      "acmpyTypeCd": "동반불가",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9000809",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9000812",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9000814",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9000815",
+      "acmpyTypeCd": "동반불가",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9000817",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9000826",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9000833",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9000834",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9000835",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9000838",
+      "acmpyTypeCd": "동반불가",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9000860",
+      "acmpyTypeCd": "동반불가",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9000861",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9000864",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9000870",
+      "acmpyTypeCd": "동반불가",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9000871",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9000872",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9000873",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9000876",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9000881",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9000883",
+      "acmpyTypeCd": "동반불가",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9000884",
+      "acmpyTypeCd": "동반불가",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9000892",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9000898",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9000912",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9000922",
+      "acmpyTypeCd": "동반불가",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9000932",
+      "acmpyTypeCd": "동반불가",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9000944",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9000947",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9000949",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9000951",
+      "acmpyTypeCd": "동반불가",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9000952",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9000957",
+      "acmpyTypeCd": "동반불가",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9000960",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9000963",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9000972",
+      "acmpyTypeCd": "동반불가",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9000981",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9000984",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9000987",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9000990",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9001004",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9001006",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9001007",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9001009",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9001011",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9001013",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9001019",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9001020",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9001021",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9001023",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9001025",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9001029",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9001031",
+      "acmpyTypeCd": "동반불가",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9001032",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9001048",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9001053",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9001062",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9001067",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9001068",
+      "acmpyTypeCd": "동반불가",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9001071",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9001072",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9001073",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9001075",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9001076",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9001077",
+      "acmpyTypeCd": "동반불가",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9001078",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9001081",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9001083",
+      "acmpyTypeCd": "동반불가",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9001095",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9001096",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9001104",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9001109",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9001115",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9001118",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9001124",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9001125",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9001141",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9001143",
+      "acmpyTypeCd": "동반불가",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9001144",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9001151",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9001153",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9001156",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9001158",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9001162",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9001163",
+      "acmpyTypeCd": "동반불가",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9001167",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9001170",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9001177",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9001178",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9001190",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9001206",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9001211",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9001212",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9001214",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9001215",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9001216",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9001218",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9001223",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9001224",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9001225",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9001231",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9001232",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9001233",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9001239",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9001253",
+      "acmpyTypeCd": "동반불가",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9001269",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9001273",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9001274",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9001275",
+      "acmpyTypeCd": "동반불가",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9001277",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9001278",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9001280",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9001281",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9001282",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9001284",
+      "acmpyTypeCd": "동반불가",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9001287",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9001288",
+      "acmpyTypeCd": "동반불가",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9001290",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9001291",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9001297",
+      "acmpyTypeCd": "동반불가",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9001299",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9001304",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9001320",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9001325",
+      "acmpyTypeCd": "동반불가",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9001326",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9001328",
+      "acmpyTypeCd": "동반불가",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9001329",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9001332",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9001333",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9001336",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9001337",
+      "acmpyTypeCd": "동반불가",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9001342",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9001344",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9001356",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9001358",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9001359",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9001363",
+      "acmpyTypeCd": "동반불가",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9001364",
+      "acmpyTypeCd": "동반불가",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9001367",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9001370",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9001371",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9001380",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9001385",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9001386",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9001391",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9001401",
+      "acmpyTypeCd": "동반불가",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9001402",
+      "acmpyTypeCd": "동반불가",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9001407",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9001408",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9001410",
+      "acmpyTypeCd": "동반불가",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9001412",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9001413",
+      "acmpyTypeCd": "동반불가",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9001417",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9001418",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9001420",
+      "acmpyTypeCd": "동반불가",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9001425",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9001426",
+      "acmpyTypeCd": "동반불가",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9001432",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9001434",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9001456",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9001457",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9001460",
+      "acmpyTypeCd": "동반불가",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9001461",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9001472",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9001473",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9001474",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9001476",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9001479",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9001480",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9001483",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9001486",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9001491",
+      "acmpyTypeCd": "동반불가",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9001492",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9001496",
+      "acmpyTypeCd": "동반불가",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9001497",
+      "acmpyTypeCd": "동반불가",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9001498",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9001502",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9001503",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9001511",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9001524",
+      "acmpyTypeCd": "동반불가",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9001526",
+      "acmpyTypeCd": "동반불가",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9001531",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9001532",
+      "acmpyTypeCd": "동반불가",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9001534",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9001535",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9001541",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9001549",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9001550",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9001551",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9001553",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9001558",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9001559",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9001568",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9001584",
+      "acmpyTypeCd": "동반불가",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9001587",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9001591",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9001592",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9001596",
+      "acmpyTypeCd": "동반불가",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9001597",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9001599",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9001602",
+      "acmpyTypeCd": "동반불가",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9001604",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9001606",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9001607",
+      "acmpyTypeCd": "동반불가",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9001618",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9001623",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9001633",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9001635",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9001636",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9001639",
+      "acmpyTypeCd": "동반불가",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9001642",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9001643",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9001645",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9001648",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9001651",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9001652",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9001655",
+      "acmpyTypeCd": "동반불가",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9001656",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9001673",
+      "acmpyTypeCd": "동반불가",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9001677",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9001682",
+      "acmpyTypeCd": "동반불가",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9001686",
+      "acmpyTypeCd": "동반불가",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9001687",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9001693",
+      "acmpyTypeCd": "동반불가",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9001698",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9001702",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9001708",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9001724",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9001732",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9001735",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9001736",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9001738",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9001740",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9001747",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9001748",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9001749",
+      "acmpyTypeCd": "동반불가",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9001752",
+      "acmpyTypeCd": "동반불가",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9001753",
+      "acmpyTypeCd": "동반불가",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9001760",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9001761",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9001762",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9001771",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9001773",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9001774",
+      "acmpyTypeCd": "동반불가",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9001777",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9001778",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9001780",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9001782",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9001785",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9001798",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9001799",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9001803",
+      "acmpyTypeCd": "동반불가",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9001806",
+      "acmpyTypeCd": "동반불가",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9001807",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9001816",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9001818",
+      "acmpyTypeCd": "동반불가",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9001828",
+      "acmpyTypeCd": "동반불가",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9001829",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9001836",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9001837",
+      "acmpyTypeCd": "동반불가",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9001840",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9001842",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9001843",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9001857",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9001858",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9001867",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9001869",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9001870",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9001872",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9001875",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9001877",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9001881",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9001883",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9001885",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9001892",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9001895",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9001901",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9001904",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9001905",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9001907",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9001909",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9001912",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9001916",
+      "acmpyTypeCd": "동반불가",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9001917",
+      "acmpyTypeCd": "동반불가",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9001918",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9001921",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9001924",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9001941",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9001944",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9001945",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9001946",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9001953",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9001956",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9001963",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9001966",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9001976",
+      "acmpyTypeCd": "동반불가",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9001983",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9001985",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9001988",
+      "acmpyTypeCd": "동반불가",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9001990",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9001991",
+      "acmpyTypeCd": "동반불가",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9001992",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9001993",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9001997",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9002012",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9002017",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9002018",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9002019",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9002020",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9002022",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9002023",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9002034",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9002038",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9002039",
+      "acmpyTypeCd": "동반불가",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9002042",
+      "acmpyTypeCd": "동반불가",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9002046",
+      "acmpyTypeCd": "동반불가",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9002048",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9002049",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9002059",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9002073",
+      "acmpyTypeCd": "동반불가",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9002086",
+      "acmpyTypeCd": "동반불가",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9002091",
+      "acmpyTypeCd": "동반불가",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9002098",
+      "acmpyTypeCd": "동반불가",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9002102",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9002103",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9002110",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9002111",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9002120",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9002126",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9002128",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9002129",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9002134",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9002139",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9002140",
+      "acmpyTypeCd": "동반불가",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9002141",
+      "acmpyTypeCd": "동반불가",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9002147",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9002151",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9002153",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9002155",
+      "acmpyTypeCd": "동반불가",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9002160",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9002161",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9002163",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9002164",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9002166",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9002168",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9002176",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9002179",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9002180",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9002181",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9002182",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9002185",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9002191",
+      "acmpyTypeCd": "동반불가",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9002192",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9002209",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9002210",
+      "acmpyTypeCd": "동반불가",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9002213",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9002219",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9002220",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9002223",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9002224",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9002230",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9002232",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9002234",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9002235",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9002244",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9002246",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9002250",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9002255",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9002258",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9002267",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9002268",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9002270",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9002272",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9002287",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9002291",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9002293",
+      "acmpyTypeCd": "동반불가",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9002294",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9002297",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9002298",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9002302",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9002307",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9002312",
+      "acmpyTypeCd": "동반불가",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9002319",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9002321",
+      "acmpyTypeCd": "동반불가",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9002325",
+      "acmpyTypeCd": "동반불가",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9002326",
+      "acmpyTypeCd": "동반불가",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9002327",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9002328",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9002329",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9002330",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9002331",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     },
+     {
+      "contentid": "9002334",
+      "acmpyTypeCd": "일부구역 동반가능",
+      "acmpyPsblCpam": "소형견 (합성)",
+      "acmpyNeedMtr": "목줄 착용 (합성)"
+     }
+    ]
+   },
+   "numOfRows": 607,
+   "pageNo": 1,
+   "totalCount": 607
+  }
+ }
+}
