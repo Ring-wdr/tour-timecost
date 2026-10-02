@@ -109,7 +109,8 @@ export async function latestGasolinePrice(): Promise<{ price: number; day: strin
   return rows[0] ?? null;
 }
 
+/** 만료 후 30일 지난 캐시만 삭제 (그 전까지는 외부 장애 시 "최신 아님" 응답에 쓴다) */
 export async function purgeExpiredCache() {
-  const rows = await db.execute(sql`DELETE FROM api_cache WHERE expires_at < now() RETURNING key`);
+  const rows = await db.execute(sql`DELETE FROM api_cache WHERE expires_at < now() - interval '30 days' RETURNING key`);
   return { deleted: rows.length };
 }
