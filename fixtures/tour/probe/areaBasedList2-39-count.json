@@ -1,0 +1,51 @@
+{
+ "recordedAt": "2026-10-02T15:07:15.579Z",
+ "request": {
+  "url": "https://apis.data.go.kr/B551011/KorService2/areaBasedList2?serviceKey=<REDACTED>&MobileOS=ETC&MobileApp=WeekendTripCompare&_type=json&contentTypeId=39&numOfRows=1&pageNo=1"
+ },
+ "status": 200,
+ "body": {
+  "response": {
+   "header": {
+    "resultCode": "0000",
+    "resultMsg": "OK"
+   },
+   "body": {
+    "items": {
+     "item": [
+      {
+       "addr1": "부산광역시 부산진구  중앙번영로 (6)",
+       "addr2": "",
+       "areacode": "",
+       "cat1": "",
+       "cat2": "",
+       "cat3": "",
+       "contentid": "2805408",
+       "contenttypeid": "39",
+       "createdtime": "20220125140006",
+       "firstimage": "",
+       "firstimage2": "",
+       "cpyrhtDivCd": "",
+       "mapx": "129.059799436643",
+       "mapy": "35.1447671591569",
+       "mlevel": "6",
+       "modifiedtime": "20260227145625",
+       "sigungucode": "",
+       "tel": "",
+       "title": "가가와",
+       "zipcode": "47361",
+       "lDongRegnCd": "26",
+       "lDongSignguCd": "230",
+       "lclsSystm1": "FD",
+       "lclsSystm2": "FD02",
+       "lclsSystm3": "FD020200"
+      }
+     ]
+    },
+    "numOfRows": 1,
+    "pageNo": 1,
+    "totalCount": 13404
+   }
+  }
+ }
+}

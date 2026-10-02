@@ -1,0 +1,51 @@
+{
+ "recordedAt": "2026-10-02T15:07:14.330Z",
+ "request": {
+  "url": "https://apis.data.go.kr/B551011/KorService2/areaBasedList2?serviceKey=<REDACTED>&MobileOS=ETC&MobileApp=WeekendTripCompare&_type=json&contentTypeId=28&numOfRows=1&pageNo=1"
+ },
+ "status": 200,
+ "body": {
+  "response": {
+   "header": {
+    "resultCode": "0000",
+    "resultMsg": "OK"
+   },
+   "body": {
+    "items": {
+     "item": [
+      {
+       "addr1": "경상남도 산청군 시천면 지리산대로1478번길 31-10",
+       "addr2": "",
+       "areacode": "",
+       "cat1": "",
+       "cat2": "",
+       "cat3": "",
+       "contentid": "2792802",
+       "contenttypeid": "28",
+       "createdtime": "20211213211713",
+       "firstimage": "",
+       "firstimage2": "",
+       "cpyrhtDivCd": "",
+       "mapx": "127.8177271164",
+       "mapy": "35.2399971599",
+       "mlevel": "6",
+       "modifiedtime": "20260608175754",
+       "sigungucode": "",
+       "tel": "",
+       "title": "가고파캠핑장",
+       "zipcode": "52238",
+       "lDongRegnCd": "48",
+       "lDongSignguCd": "860",
+       "lclsSystm1": "AC",
+       "lclsSystm2": "AC05",
+       "lclsSystm3": "AC050100"
+      }
+     ]
+    },
+    "numOfRows": 1,
+    "pageNo": 1,
+    "totalCount": 3751
+   }
+  }
+ }
+}

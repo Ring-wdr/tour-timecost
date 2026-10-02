@@ -7,7 +7,7 @@ import { ResultMap } from "@/components/ResultMap";
 import type { CompareResult } from "@/lib/compare";
 import { inputToSearchParams, PREF_LABEL, type CompareInput } from "@/lib/compare-input";
 import { duration, won, ymd } from "@/lib/format";
-import { costTip, SOURCE_LABEL, timeTip } from "@/lib/explain";
+import { costTip, sourceLabel, timeTip } from "@/lib/explain";
 import { ContributionBar } from "@/components/ContributionBar";
 import { normalizeWeights, scoreCandidates, type Weights } from "@/lib/scoring";
 
@@ -138,13 +138,13 @@ export function ResultsView({ result, input }: { result: CompareResult; input: C
                   </div>
                   <div className="row" style={{ gap: 6 }}>
                     {c.cost.overBudget && <span className="badge danger">예산 초과</span>}
-                    {c.festivals.length > 0 && (
-                      <span className="badge fest" title={c.festivals.map((f) => f.title).join(", ")}>
-                        축제 {c.festivals.length}건 진행
+                    {c.festivals.some((f) => !f.longRunning) && (
+                      <span className="badge fest" title={c.festivals.filter((f) => !f.longRunning).map((f) => f.title).join(", ")}>
+                        축제 {c.festivals.filter((f) => !f.longRunning).length}건 진행
                       </span>
                     )}
                     {c.route.stale && <span className="badge warn">최신 아님</span>}
-                    {c.route.source !== "live" && <span className="badge warn">경로 {SOURCE_LABEL[c.route.source]}</span>}
+                    {c.route.source !== "live" && <span className="badge warn">{sourceLabel(c.route)}</span>}
                     {input.pet && <span className="badge">반려동물 동반 가능 {c.poi.petCount}곳</span>}
                   </div>
                   <div className="facts">
@@ -181,7 +181,9 @@ export function ResultsView({ result, input }: { result: CompareResult; input: C
                       </tbody>
                     </table>
                     {c.festivals.length > 0 && (
-                      <p className="small">축제: {c.festivals.map((f) => `${f.title} (${ymd(f.startDate)}~${ymd(f.endDate)})`).join(", ")}</p>
+                      <p className="small">
+                        축제·행사: {c.festivals.map((f) => `${f.title} (${ymd(f.startDate)}~${ymd(f.endDate)}${f.longRunning ? ", 장기 행사·보너스 제외" : ""})`).join(", ")}
+                      </p>
                     )}
                   </details>
                 </div>

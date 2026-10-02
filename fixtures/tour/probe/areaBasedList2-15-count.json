@@ -1,0 +1,51 @@
+{
+ "recordedAt": "2026-10-02T15:07:13.979Z",
+ "request": {
+  "url": "https://apis.data.go.kr/B551011/KorService2/areaBasedList2?serviceKey=<REDACTED>&MobileOS=ETC&MobileApp=WeekendTripCompare&_type=json&contentTypeId=15&numOfRows=1&pageNo=1"
+ },
+ "status": 200,
+ "body": {
+  "response": {
+   "header": {
+    "resultCode": "0000",
+    "resultMsg": "OK"
+   },
+   "body": {
+    "items": {
+     "item": [
+      {
+       "addr1": "울산광역시 남구 대공원로 94 (옥동)",
+       "addr2": "",
+       "areacode": "",
+       "cat1": "",
+       "cat2": "",
+       "cat3": "",
+       "contentid": "4090201",
+       "contenttypeid": "15",
+       "createdtime": "20260721133956",
+       "firstimage": "https://tong.visitkorea.or.kr/cms/resource/02/4090202_image2_1.jpg",
+       "firstimage2": "https://tong.visitkorea.or.kr/cms/resource/02/4090202_image3_1.jpg",
+       "cpyrhtDivCd": "Type3",
+       "mapx": "129.2938457635",
+       "mapy": "35.5310582726",
+       "mlevel": "",
+       "modifiedtime": "20260722161226",
+       "sigungucode": "",
+       "tel": "052-255-1823",
+       "title": "가든 나이트 마켓",
+       "zipcode": "44660",
+       "lDongRegnCd": "31",
+       "lDongSignguCd": "140",
+       "lclsSystm1": "EV",
+       "lclsSystm2": "EV03",
+       "lclsSystm3": "EV030400"
+      }
+     ]
+    },
+    "numOfRows": 1,
+    "pageNo": 1,
+    "totalCount": 901
+   }
+  }
+ }
+}

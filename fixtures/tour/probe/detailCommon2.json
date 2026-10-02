@@ -1,0 +1,54 @@
+{
+ "recordedAt": "2026-10-02T15:07:16.304Z",
+ "request": {
+  "url": "https://apis.data.go.kr/B551011/KorService2/detailCommon2?serviceKey=<REDACTED>&MobileOS=ETC&MobileApp=WeekendTripCompare&_type=json&contentId=127480"
+ },
+ "status": 200,
+ "body": {
+  "response": {
+   "header": {
+    "resultCode": "0000",
+    "resultMsg": "OK"
+   },
+   "body": {
+    "items": {
+     "item": [
+      {
+       "contentid": "127480",
+       "contenttypeid": "12",
+       "title": "가거도",
+       "createdtime": "20030905090000",
+       "modifiedtime": "20260630184428",
+       "tel": "",
+       "telname": "",
+       "homepage": "<a href=\"https://tour.shinan.go.kr/home/tour/island_tour/heuksan/place/place_12/page.wscms\" target=\"_blank\" title=\"새창 : 홈페이지로 이동\">https://tour.shinan.go.kr</a>",
+       "firstimage": "http://tong.visitkorea.or.kr/cms/resource/28/3572128_image2_1.jpg",
+       "firstimage2": "http://tong.visitkorea.or.kr/cms/resource/28/3572128_image3_1.jpg",
+       "cpyrhtDivCd": "Type1",
+       "areacode": "38",
+       "sigungucode": "12",
+       "lDongRegnCd": "12",
+       "lDongSignguCd": "870",
+       "lclsSystm1": "NA",
+       "lclsSystm2": "NA02",
+       "lclsSystm3": "NA020500",
+       "cat1": "A01",
+       "cat2": "A0101",
+       "cat3": "A01011300",
+       "addr1": "전남광주통합특별시 신안군 흑산면 가거도길 38-2",
+       "addr2": "",
+       "zipcode": "58866",
+       "mapx": "125.1263860145",
+       "mapy": "34.0520609879",
+       "mlevel": "6",
+       "overview": "가거도(소흑산도)는 중국의 새벽닭 울음소리가 들릴 만큼 중국 땅과 가깝다는 우리나라 최서남단의 섬으로, 독실산(639m)의 산세가 높고 절벽으로 형성되어 웅장한 절경을 자랑하는 섬이다. 가거도의 섬등반도는 서쪽에 있는 반도 형태의 지형으로 해안선 주변으로 반도 전체가 주상절리를 이루고 있기 때문에 섬등병풍 바위라고도 불린다. 기암절벽으로 이루어진 암봉과 병풍처럼 펼쳐진 해식애가 일대 장관을 이루며, 특히 낙조 경관이 아름답다. 가거도라는 이름은 가히 살만한 섬이라는 뜻에서 붙었다고도 하고, 가도 가도 뱃길의 끝이 보이지 않는 섬이라해서 가거도라 불리었다는 설도 있다. 가거도는 서해안 어업전진기지로서 매우 중요한 섬이다. 한중일 어선들의 각축장이 되어 있는 황금 어장이기도 하고, 국토의 최서남단에 있기에 지리적, 외교적, 정치적으로 중요한 섬이기도 하다. 멸치, 조기, 갈치, 다랑어, 돔 등 온갖 고기들이 모여들기 때문에 연중 많은 낚시객들이 찾는 섬이며, 가거도 등대 앞바다에는 천연기념물인 바닷새의 번식지 국흘도(구굴도)가 있다. 여름철새인 슴새와 뿔쇠오리가 이 무인도에 둥지를 틀고 번식하는 등 백여 종의 철새들이 봄과 가을에 가거도에서 쉬거나 번식을 한다."
+      }
+     ]
+    },
+    "numOfRows": 1,
+    "pageNo": 1,
+    "totalCount": 1
+   }
+  }
+ }
+}

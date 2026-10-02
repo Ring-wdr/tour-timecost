@@ -1,0 +1,86 @@
+{
+ "recordedAt": "2026-10-02T15:07:12.881Z",
+ "request": {
+  "url": "https://apis.data.go.kr/B551011/KorService2/searchFestival2?serviceKey=<REDACTED>&MobileOS=ETC&MobileApp=WeekendTripCompare&_type=json&eventStartDate=20261003&eventEndDate=20261004&numOfRows=2&pageNo=1"
+ },
+ "status": 200,
+ "body": {
+  "response": {
+   "header": {
+    "resultCode": "0000",
+    "resultMsg": "OK"
+   },
+   "body": {
+    "items": {
+     "item": [
+      {
+       "addr1": "경상남도 거창군 신원면 연수사길 452",
+       "addr2": "",
+       "zipcode": "50153",
+       "cat1": "",
+       "cat2": "",
+       "cat3": "",
+       "contentid": "2746930",
+       "contenttypeid": "15",
+       "createdtime": "20210917034525",
+       "eventstartdate": "20260918",
+       "eventenddate": "20261011",
+       "firstimage": "https://tong.visitkorea.or.kr/cms/resource/19/3539719_image2_1.jpg",
+       "firstimage2": "https://tong.visitkorea.or.kr/cms/resource/19/3539719_image3_1.jpg",
+       "cpyrhtDivCd": "Type3",
+       "mapx": "127.9175083031",
+       "mapy": "35.5896217023",
+       "mlevel": "6",
+       "modifiedtime": "20260923181010",
+       "areacode": "",
+       "sigungucode": "",
+       "tel": "055-940-8227",
+       "title": "감악산 꽃별 여행",
+       "lDongRegnCd": "48",
+       "lDongSignguCd": "880",
+       "lclsSystm1": "EV",
+       "lclsSystm2": "EV01",
+       "lclsSystm3": "EV010500",
+       "progresstype": "선택안함",
+       "festivaltype": ""
+      },
+      {
+       "addr1": "서울특별시 강남구 도산대로 320 (논현동)",
+       "addr2": "",
+       "zipcode": "06054",
+       "cat1": "",
+       "cat2": "",
+       "cat3": "",
+       "contentid": "737479",
+       "contenttypeid": "15",
+       "createdtime": "20090521185913",
+       "eventstartdate": "20261003",
+       "eventenddate": "20261005",
+       "firstimage": "https://tong.visitkorea.or.kr/cms/resource/43/4101843_image2_1.jpg",
+       "firstimage2": "https://tong.visitkorea.or.kr/cms/resource/43/4101843_image3_1.jpg",
+       "cpyrhtDivCd": "Type3",
+       "mapx": "127.0369343307",
+       "mapy": "37.5221428648",
+       "mlevel": "6",
+       "modifiedtime": "20260930160540",
+       "areacode": "",
+       "sigungucode": "",
+       "tel": "02-3423-5543",
+       "title": "강남페스티벌",
+       "lDongRegnCd": "11",
+       "lDongSignguCd": "680",
+       "lclsSystm1": "EV",
+       "lclsSystm2": "EV01",
+       "lclsSystm3": "EV010200",
+       "progresstype": "선택안함",
+       "festivaltype": ""
+      }
+     ]
+    },
+    "numOfRows": 2,
+    "pageNo": 1,
+    "totalCount": 117
+   }
+  }
+ }
+}

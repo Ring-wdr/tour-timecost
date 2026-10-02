@@ -1,0 +1,45 @@
+{
+ "recordedAt": "2026-10-02T15:07:10.653Z",
+ "request": {
+  "url": "https://apis.data.go.kr/B551011/KorService2/ldongCode2?serviceKey=<REDACTED>&MobileOS=ETC&MobileApp=WeekendTripCompare&_type=json&lDongListYn=Y&numOfRows=3&pageNo=1"
+ },
+ "status": 200,
+ "body": {
+  "response": {
+   "header": {
+    "resultCode": "0000",
+    "resultMsg": "OK"
+   },
+   "body": {
+    "items": {
+     "item": [
+      {
+       "lDongRegnCd": "11",
+       "lDongRegnNm": "서울특별시",
+       "lDongSignguCd": "110",
+       "lDongSignguNm": "종로구",
+       "rnum": 1
+      },
+      {
+       "lDongRegnCd": "11",
+       "lDongRegnNm": "서울특별시",
+       "lDongSignguCd": "140",
+       "lDongSignguNm": "중구",
+       "rnum": 2
+      },
+      {
+       "lDongRegnCd": "11",
+       "lDongRegnNm": "서울특별시",
+       "lDongSignguCd": "170",
+       "lDongSignguNm": "용산구",
+       "rnum": 3
+      }
+     ]
+    },
+    "numOfRows": 3,
+    "pageNo": 1,
+    "totalCount": 269
+   }
+  }
+ }
+}

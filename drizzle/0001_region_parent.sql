@@ -1,0 +1,1 @@
+ALTER TABLE "regions" ADD COLUMN "parent_code" text;

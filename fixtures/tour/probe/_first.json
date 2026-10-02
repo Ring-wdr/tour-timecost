@@ -1,0 +1,51 @@
+{
+ "recordedAt": "2026-10-02T15:07:15.996Z",
+ "request": {
+  "url": "https://apis.data.go.kr/B551011/KorService2/areaBasedList2?serviceKey=<REDACTED>&MobileOS=ETC&MobileApp=WeekendTripCompare&_type=json&contentTypeId=12&numOfRows=1&pageNo=1"
+ },
+ "status": 200,
+ "body": {
+  "response": {
+   "header": {
+    "resultCode": "0000",
+    "resultMsg": "OK"
+   },
+   "body": {
+    "items": {
+     "item": [
+      {
+       "addr1": "전남광주통합특별시 신안군 흑산면 가거도길 38-2",
+       "addr2": "",
+       "areacode": "38",
+       "cat1": "A01",
+       "cat2": "A0101",
+       "cat3": "A01011300",
+       "contentid": "127480",
+       "contenttypeid": "12",
+       "createdtime": "20030905090000",
+       "firstimage": "http://tong.visitkorea.or.kr/cms/resource/28/3572128_image2_1.jpg",
+       "firstimage2": "http://tong.visitkorea.or.kr/cms/resource/28/3572128_image3_1.jpg",
+       "cpyrhtDivCd": "Type1",
+       "mapx": "125.1263860145",
+       "mapy": "34.0520609879",
+       "mlevel": "6",
+       "modifiedtime": "20260630184428",
+       "sigungucode": "12",
+       "tel": "",
+       "title": "가거도",
+       "zipcode": "58866",
+       "lDongRegnCd": "12",
+       "lDongSignguCd": "870",
+       "lclsSystm1": "NA",
+       "lclsSystm2": "NA02",
+       "lclsSystm3": "NA020500"
+      }
+     ]
+    },
+    "numOfRows": 1,
+    "pageNo": 1,
+    "totalCount": 12603
+   }
+  }
+ }
+}

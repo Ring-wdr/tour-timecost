@@ -98,6 +98,12 @@ export function parsePetAllowed(item: { acmpyTypeCd?: string } | undefined): boo
   return /가능|동반/.test(t);
 }
 
+/** 이미지 URL이 http/https 섞여 온다(실측). 혼합 콘텐츠 방지를 위해 https로 통일 */
+export function httpsImage(url?: string): string | null {
+  if (!url) return null;
+  return url.replace(/^http:\/\/tong\.visitkorea\.or\.kr\//, "https://tong.visitkorea.or.kr/");
+}
+
 export function regionCodeOf(item: { lDongRegnCd?: string; lDongSignguCd?: string }): string | null {
   if (!item.lDongRegnCd || !item.lDongSignguCd) return null;
   return `${item.lDongRegnCd}${item.lDongSignguCd}`;

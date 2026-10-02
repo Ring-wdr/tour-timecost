@@ -1,0 +1,21 @@
+{
+ "recordedAt": "2026-10-02T15:07:16.925Z",
+ "request": {
+  "url": "https://apis.data.go.kr/B551011/KorService2/detailPetTour2?serviceKey=<REDACTED>&MobileOS=ETC&MobileApp=WeekendTripCompare&_type=json&contentId=127480"
+ },
+ "status": 200,
+ "body": {
+  "response": {
+   "header": {
+    "resultCode": "0000",
+    "resultMsg": "OK"
+   },
+   "body": {
+    "items": "",
+    "numOfRows": 0,
+    "pageNo": 1,
+    "totalCount": 0
+   }
+  }
+ }
+}

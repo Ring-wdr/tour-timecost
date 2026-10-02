@@ -10,7 +10,7 @@ import { finishRun, lastCheckpoint, startRun } from "@/lib/ingest";
 import { computeRegions } from "@/lib/regions";
 import { createTourClient, TourQuotaError } from "@/lib/tour/client";
 import { QuotaStop, tourCall } from "@/lib/tour/quota";
-import { parseCoord, regionCodeOf, type AreaItem } from "@/lib/tour/schema";
+import { httpsImage, parseCoord, regionCodeOf, type AreaItem } from "@/lib/tour/schema";
 
 type Checkpoint = { regionsDone: boolean; typeIndex: number; pageNo: number };
 
@@ -31,7 +31,7 @@ function toRow(it: AreaItem) {
     lon: c?.lon ?? null,
     lat: c?.lat ?? null,
     regionCode: regionCodeOf(it),
-    imageUrl: it.firstimage ?? it.firstimage2 ?? null,
+    imageUrl: httpsImage(it.firstimage ?? it.firstimage2),
     modifiedTime: it.modifiedtime ?? null,
     raw: it,
   };

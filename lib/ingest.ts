@@ -39,3 +39,11 @@ export async function lastSuccessfulRuns() {
 }
 
 export const sleep = (ms: number) => new Promise((r) => setTimeout(r, ms));
+
+/** DB에 들어 있는 관광 데이터의 출처 (마지막 성공 적재 기준). 적재 전이면 null */
+export async function tourDataSource(): Promise<"live" | "mock" | null> {
+  const rows = await db.execute<{ source: "live" | "mock" }>(
+    sql`SELECT source FROM ingest_runs WHERE job = 'tour' AND status = 'done' ORDER BY id DESC LIMIT 1`,
+  );
+  return rows[0]?.source ?? null;
+}

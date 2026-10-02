@@ -3,7 +3,7 @@ import { sql } from "drizzle-orm";
 import { config } from "@/lib/config";
 import { db } from "@/lib/db";
 import { isKakaoMock, isTourMock } from "@/lib/env";
-import { lastSuccessfulRuns } from "@/lib/ingest";
+import { lastSuccessfulRuns, tourDataSource } from "@/lib/ingest";
 import { kstDay, usageToday } from "@/lib/usage";
 
 export const dynamic = "force-dynamic";
@@ -28,13 +28,12 @@ export async function GET() {
   return NextResponse.json({
     ok: true,
     db: "up",
-    sources: { tour: isTourMock() ? "mock" : "live", routing: isKakaoMock() ? "mock" : "live" },
+    sources: { tourClient: isTourMock() ? "mock" : "live", tourData: await tourDataSource(), routing: isKakaoMock() ? "mock" : "live" },
     lastIngest: Object.fromEntries(runs.map((r) => [r.job, { finishedAt: r.finished_at, source: r.source }])),
     usageToday: {
       day: kstDay(),
       tour: { used: usage["tour"] ?? 0, limit: config.tour.dailyLimit },
       kakaoDirections: { used: usage["kakao:directions"] ?? 0, limit: config.kakao.dailyLimits.directions },
-      kakaoDestinations: { used: usage["kakao:destinations"] ?? 0, limit: config.kakao.dailyLimits.destinations },
       kakaoFuture: { used: usage["kakao:future"] ?? 0, limit: config.kakao.dailyLimits.future },
     },
     data: counts[0],

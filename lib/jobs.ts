@@ -4,9 +4,10 @@ import { config } from "@/lib/config";
 import { db, schema } from "@/lib/db";
 import { env } from "@/lib/env";
 import { finishRun, startRun } from "@/lib/ingest";
+import { mergeGeneralGu } from "@/lib/regions";
 import { createTourClient } from "@/lib/tour/client";
 import { tourCall } from "@/lib/tour/quota";
-import { isoToYmd, parseCoord, regionCodeOf, ymdToIso } from "@/lib/tour/schema";
+import { httpsImage, isoToYmd, parseCoord, regionCodeOf, ymdToIso } from "@/lib/tour/schema";
 import { kstDay } from "@/lib/usage";
 
 const addDays = (iso: string, n: number) => new Date(Date.parse(iso) + n * 86_400_000).toISOString().slice(0, 10);
@@ -34,7 +35,7 @@ export async function refreshFestivals() {
           lat: c?.lat ?? null,
           regionCode: regionCodeOf(f),
           addr: f.addr1 ?? null,
-          imageUrl: f.firstimage ?? null,
+          imageUrl: httpsImage(f.firstimage),
           raw: f,
         };
       });
@@ -61,6 +62,7 @@ export async function refreshFestivals() {
       count += rows.length;
       if (pageNo * config.tour.pageSize >= page.totalCount || rows.length === 0) break;
     }
+    await mergeGeneralGu();
     // 이미 끝난 축제 정리
     await db.execute(sql`DELETE FROM festivals WHERE end_date < ${from}`);
     const stats = { from, to, upserted: count, source: client.source };

@@ -1,0 +1,80 @@
+{
+ "recordedAt": "2026-10-02T15:07:13.311Z",
+ "request": {
+  "url": "https://apis.data.go.kr/B551011/KorService2/areaBasedSyncList2?serviceKey=<REDACTED>&MobileOS=ETC&MobileApp=WeekendTripCompare&_type=json&numOfRows=2&pageNo=1"
+ },
+ "status": 200,
+ "body": {
+  "response": {
+   "header": {
+    "resultCode": "0000",
+    "resultMsg": "OK"
+   },
+   "body": {
+    "items": {
+     "item": [
+      {
+       "addr1": "서울 송파구 올림픽로 300¸ 2층",
+       "addr2": "",
+       "areacode": "1",
+       "cat1": "A04",
+       "cat2": "A0401",
+       "cat3": "A04011000",
+       "contentid": "2924134",
+       "contenttypeid": "38",
+       "createdtime": "20221030182739",
+       "firstimage": "http://tong.visitkorea.or.kr/cms/resource/00/2879100_image2_1.jpg",
+       "firstimage2": "http://tong.visitkorea.or.kr/cms/resource/00/2879100_image3_1.jpg",
+       "cpyrhtDivCd": "Type3",
+       "mapx": "127.1040305171",
+       "mapy": "37.5142459111",
+       "mlevel": "6",
+       "modifiedtime": "20240408230251",
+       "sigungucode": "18",
+       "tel": "",
+       "title": "가가밀라노 롯데백화점 에비뉴엘 월드타워점",
+       "zipcode": "05551",
+       "showflag": "0",
+       "lDongRegnCd": "",
+       "lDongSignguCd": "",
+       "lclsSystm1": "",
+       "lclsSystm2": "",
+       "lclsSystm3": ""
+      },
+      {
+       "addr1": "충청남도 공주시 감영길 3 (반죽동)",
+       "addr2": "",
+       "areacode": "",
+       "cat1": "",
+       "cat2": "",
+       "cat3": "",
+       "contentid": "2750144",
+       "contenttypeid": "38",
+       "createdtime": "20210928012320",
+       "firstimage": "https://tong.visitkorea.or.kr/cms/resource/48/4106048_image2_1.jpg",
+       "firstimage2": "https://tong.visitkorea.or.kr/cms/resource/48/4106048_image3_1.jpg",
+       "cpyrhtDivCd": "Type3",
+       "mapx": "127.1216584808",
+       "mapy": "36.4528799330",
+       "mlevel": "6",
+       "modifiedtime": "20260831150117",
+       "sigungucode": "",
+       "tel": "",
+       "title": "가가상점",
+       "zipcode": "32546",
+       "showflag": "1",
+       "lDongRegnCd": "44",
+       "lDongSignguCd": "150",
+       "lclsSystm1": "SH",
+       "lclsSystm2": "SH05",
+       "lclsSystm3": "SH050200"
+      }
+     ]
+    },
+    "numOfRows": 2,
+    "pageNo": 1,
+    "totalCount": 69073
+   }
+  }
+ }
+}

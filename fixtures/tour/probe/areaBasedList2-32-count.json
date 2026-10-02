@@ -1,0 +1,51 @@
+{
+ "recordedAt": "2026-10-02T15:07:14.703Z",
+ "request": {
+  "url": "https://apis.data.go.kr/B551011/KorService2/areaBasedList2?serviceKey=<REDACTED>&MobileOS=ETC&MobileApp=WeekendTripCompare&_type=json&contentTypeId=32&numOfRows=1&pageNo=1"
+ },
+ "status": 200,
+ "body": {
+  "response": {
+   "header": {
+    "resultCode": "0000",
+    "resultMsg": "OK"
+   },
+   "body": {
+    "items": {
+     "item": [
+      {
+       "addr1": "전북특별자치도 전주시 완산구 한지길 68",
+       "addr2": "(풍남동3가)",
+       "areacode": "37",
+       "cat1": "B02",
+       "cat2": "B0201",
+       "cat3": "B02011600",
+       "contentid": "2671267",
+       "contenttypeid": "32",
+       "createdtime": "20200908224549",
+       "firstimage": "",
+       "firstimage2": "",
+       "cpyrhtDivCd": "",
+       "mapx": "127.1535667664",
+       "mapy": "35.8173223769",
+       "mlevel": "",
+       "modifiedtime": "20241126104237",
+       "sigungucode": "12",
+       "tel": "",
+       "title": "가락청",
+       "zipcode": "55041",
+       "lDongRegnCd": "52",
+       "lDongSignguCd": "111",
+       "lclsSystm1": "AC",
+       "lclsSystm2": "AC03",
+       "lclsSystm3": "AC030200"
+      }
+     ]
+    },
+    "numOfRows": 1,
+    "pageNo": 1,
+    "totalCount": 2925
+   }
+  }
+ }
+}

@@ -1,4 +1,4 @@
-/** 카카오모빌리티 길찾기 실측. 엔드포인트는 공식 문서 확인 전까지 docs/api-notes.md에 "미확인" */
+/** 카카오모빌리티 길찾기 실측. 엔드포인트·파라미터는 공식 문서(2026-10-02) 기준 */
 import "dotenv/config";
 import { config } from "@/lib/config";
 import { saveProbe } from "./_save";
@@ -22,7 +22,7 @@ async function call(name: string, url: string, init: RequestInit = {}) {
 }
 
 await call("directions", `${config.kakao.baseUrl}/v1/directions?origin=${seoul.x},${seoul.y}&destination=${gapyeong.x},${gapyeong.y}&summary=true`);
-// 미확인: 다중 목적지 엔드포인트/바디
+// 다중 목적지: radius 최대 10000(문서). 반경 밖 목적지가 어떤 result_code로 오는지 확인용 (서비스에서는 미사용)
 await call("destinations", `${config.kakao.baseUrl}/v1/destinations/directions`, {
   method: "POST",
   body: JSON.stringify({ origin: seoul, destinations: [{ ...gapyeong, key: "41820" }, { x: 128.876, y: 37.752, key: "51150" }], radius: 10000, priority: "TIME" }),
@@ -31,6 +31,7 @@ await call("destinations-out-of-radius", `${config.kakao.baseUrl}/v1/destination
   method: "POST",
   body: JSON.stringify({ origin: seoul, destinations: [{ x: 129.225, y: 35.856, key: "47130" }], radius: 10000, priority: "TIME" }),
 });
-// 미확인: 미래 운행 정보 엔드포인트/시각 형식 (YYYYMMDDHHmm 로 알려짐)
-await call("future", `${config.kakao.baseUrl}/v1/future/directions?origin=${seoul.x},${seoul.y}&destination=${gapyeong.x},${gapyeong.y}&departure_time=202610100900&summary=true`);
+// 미래 운행 정보: departure_time=YYYYMMDDHHMM, 현재 이후 (문서)
+const sat = new Date(Date.now() + 7 * 86_400_000).toISOString().slice(0, 10).replaceAll("-", "");
+await call("future", `${config.kakao.baseUrl}/v1/future/directions?origin=${seoul.x},${seoul.y}&destination=${gapyeong.x},${gapyeong.y}&departure_time=${sat}0900&summary=true`);
 await call("directions-same-point", `${config.kakao.baseUrl}/v1/directions?origin=${seoul.x},${seoul.y}&destination=${seoul.x},${seoul.y}&summary=true`);

@@ -28,6 +28,8 @@ export const regions = pgTable("regions", {
   signguCd: text("signgu_cd").notNull(),
   sidoName: text("sido_name").notNull(),
   name: text("name").notNull(),
+  /** 일반구(예: 수원시 장안구)면 상위 시 코드. 장소·축제는 상위 시로 합산한다 */
+  parentCode: text("parent_code"),
   lon: doublePrecision("lon"),
   lat: doublePrecision("lat"),
   geom: geographyPoint("geom").generatedAlwaysAs(pointFromLonLat),

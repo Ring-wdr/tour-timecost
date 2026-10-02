@@ -115,7 +115,7 @@ export default async function ComparePage({ searchParams }: { searchParams: Prom
               {cols.map((c) => (
                 <td key={c.code}>
                   {c.festivals.length ? (
-                    <ul>{c.festivals.map((f) => <li key={f.contentId}>{f.title} ({ymd(f.startDate)}~{ymd(f.endDate)})</li>)}</ul>
+                    <ul>{c.festivals.map((f) => <li key={f.contentId}>{f.title} ({ymd(f.startDate)}~{ymd(f.endDate)}){f.longRunning && <span className="small muted"> · 장기 행사</span>}</li>)}</ul>
                   ) : (
                     <span className="muted">없음</span>
                   )}

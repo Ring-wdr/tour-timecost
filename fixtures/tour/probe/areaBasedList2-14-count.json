@@ -1,0 +1,51 @@
+{
+ "recordedAt": "2026-10-02T15:07:13.623Z",
+ "request": {
+  "url": "https://apis.data.go.kr/B551011/KorService2/areaBasedList2?serviceKey=<REDACTED>&MobileOS=ETC&MobileApp=WeekendTripCompare&_type=json&contentTypeId=14&numOfRows=1&pageNo=1"
+ },
+ "status": 200,
+ "body": {
+  "response": {
+   "header": {
+    "resultCode": "0000",
+    "resultMsg": "OK"
+   },
+   "body": {
+    "items": {
+     "item": [
+      {
+       "addr1": "충청남도 공주시 당간지주길 10 (반죽동)",
+       "addr2": "(반죽동)",
+       "areacode": "",
+       "cat1": "",
+       "cat2": "",
+       "cat3": "",
+       "contentid": "2750143",
+       "contenttypeid": "14",
+       "createdtime": "20210928012011",
+       "firstimage": "https://tong.visitkorea.or.kr/cms/resource/06/3564906_image2_1.jpg",
+       "firstimage2": "https://tong.visitkorea.or.kr/cms/resource/06/3564906_image3_1.jpg",
+       "cpyrhtDivCd": "Type3",
+       "mapx": "127.1219601080",
+       "mapy": "36.4520715077",
+       "mlevel": "6",
+       "modifiedtime": "20261001145814",
+       "sigungucode": "",
+       "tel": "",
+       "title": "가가책방",
+       "zipcode": "32549",
+       "lDongRegnCd": "44",
+       "lDongSignguCd": "150",
+       "lclsSystm1": "VE",
+       "lclsSystm2": "VE12",
+       "lclsSystm3": "VE120100"
+      }
+     ]
+    },
+    "numOfRows": 1,
+    "pageNo": 1,
+    "totalCount": 2748
+   }
+  }
+ }
+}

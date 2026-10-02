@@ -18,7 +18,9 @@ export function roundCoord(p: LonLat): LonLat {
   return { lon: Math.round(p.lon * 100) / 100, lat: Math.round(p.lat * 100) / 100 };
 }
 
-/** 제주 등 섬 여부 (자동차 경로 불가 판정용, mock 전용 근사) */
-export function isJeju(p: LonLat): boolean {
-  return p.lat < 33.7 && p.lon > 126 && p.lon < 127.1;
+/** 자동차로 육지와 연결되지 않는 큰 섬 (mock 라우터 전용 근사: 제주, 울릉) */
+export function islandOf(p: LonLat): "jeju" | "ulleung" | null {
+  if (p.lat < 33.7 && p.lon > 126 && p.lon < 127.1) return "jeju";
+  if (p.lon > 130.7 && p.lat > 37.3 && p.lat < 37.7) return "ulleung";
+  return null;
 }

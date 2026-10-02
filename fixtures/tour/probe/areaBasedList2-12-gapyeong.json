@@ -1,0 +1,78 @@
+{
+ "recordedAt": "2026-10-02T15:07:10.979Z",
+ "request": {
+  "url": "https://apis.data.go.kr/B551011/KorService2/areaBasedList2?serviceKey=<REDACTED>&MobileOS=ETC&MobileApp=WeekendTripCompare&_type=json&contentTypeId=12&lDongRegnCd=41&lDongSignguCd=820&numOfRows=2&pageNo=1&arrange=C"
+ },
+ "status": 200,
+ "body": {
+  "response": {
+   "header": {
+    "resultCode": "0000",
+    "resultMsg": "OK"
+   },
+   "body": {
+    "items": {
+     "item": [
+      {
+       "addr1": "경기도 가평군 조종면 대보리",
+       "addr2": "산 1",
+       "areacode": "",
+       "cat1": "",
+       "cat2": "",
+       "cat3": "",
+       "contentid": "125467",
+       "contenttypeid": "12",
+       "createdtime": "20030331090000",
+       "firstimage": "https://tong.visitkorea.or.kr/cms/resource/33/4114233_image2_1.jpg",
+       "firstimage2": "https://tong.visitkorea.or.kr/cms/resource/33/4114233_image3_1.jpg",
+       "cpyrhtDivCd": "Type3",
+       "mapx": "127.4210000000",
+       "mapy": "37.8189000000",
+       "mlevel": "6",
+       "modifiedtime": "20260921172324",
+       "sigungucode": "",
+       "tel": "",
+       "title": "대금산(가평)",
+       "zipcode": "12439",
+       "lDongRegnCd": "41",
+       "lDongSignguCd": "820",
+       "lclsSystm1": "NA",
+       "lclsSystm2": "NA01",
+       "lclsSystm3": "NA010100"
+      },
+      {
+       "addr1": "경기도 가평군 북면 도대리 일원",
+       "addr2": "",
+       "areacode": "",
+       "cat1": "",
+       "cat2": "",
+       "cat3": "",
+       "contentid": "127806",
+       "contenttypeid": "12",
+       "createdtime": "20060608090000",
+       "firstimage": "https://tong.visitkorea.or.kr/cms/resource/63/4113263_image2_1.jpg",
+       "firstimage2": "https://tong.visitkorea.or.kr/cms/resource/63/4113263_image3_1.jpg",
+       "cpyrhtDivCd": "Type3",
+       "mapx": "127.4807000000",
+       "mapy": "37.9430000000",
+       "mlevel": "6",
+       "modifiedtime": "20260921105446",
+       "sigungucode": "",
+       "tel": "",
+       "title": "명지산군립공원",
+       "zipcode": "12406",
+       "lDongRegnCd": "41",
+       "lDongSignguCd": "820",
+       "lclsSystm1": "NA",
+       "lclsSystm2": "NA04",
+       "lclsSystm3": "NA040300"
+      }
+     ]
+    },
+    "numOfRows": 2,
+    "pageNo": 1,
+    "totalCount": 85
+   }
+  }
+ }
+}

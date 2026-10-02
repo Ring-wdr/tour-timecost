@@ -1,0 +1,21 @@
+{
+ "recordedAt": "2026-10-02T15:07:11.610Z",
+ "request": {
+  "url": "https://apis.data.go.kr/B551011/KorService2/areaBasedList2?serviceKey=<REDACTED>&MobileOS=ETC&MobileApp=WeekendTripCompare&_type=json&contentTypeId=12&lDongRegnCd=41&lDongSignguCd=820&numOfRows=10&pageNo=9999"
+ },
+ "status": 200,
+ "body": {
+  "response": {
+   "header": {
+    "resultCode": "0000",
+    "resultMsg": "OK"
+   },
+   "body": {
+    "items": "",
+    "numOfRows": 0,
+    "pageNo": 9999,
+    "totalCount": 85
+   }
+  }
+ }
+}

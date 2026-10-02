@@ -6,7 +6,7 @@ export const config = {
     dailyLimit: 1000,
     /** 한도의 이 비율을 넘으면 배치 적재를 중단하고 다음 실행에서 이어받는다 */
     stopRatio: 0.9,
-    pageSize: 1000, // numOfRows 최대값 미확인 (docs/api-notes.md)
+    pageSize: 1000, // 실측: 1000 정상, 5000 요청도 허용됨 (docs/api-notes.md)
     requestDelayMs: 300,
     maxRetries: 3,
     /** 배치 적재 대상 콘텐츠 타입 (축제 15는 별도 스크립트) */
@@ -16,12 +16,12 @@ export const config = {
   },
   kakao: {
     baseUrl: "https://apis-navi.kakaomobility.com",
-    dailyLimits: { directions: 10_000, destinations: 1_000, future: 5_000 },
+    dailyLimits: { directions: 10_000, future: 5_000 },
     guardRatio: 0.8,
-    multiBatchSize: 30,
-    tollTopN: 20,
+    /** 예비 점수 상위 N곳만 자동차 길찾기 단건 (다중 목적지는 반경 10km 제한으로 사용 불가) */
+    routeTopN: 40,
     futureTopN: 10,
-    ttlDays: { destinations: 7, directions: 30, future: 7 },
+    ttlDays: { directions: 30, future: 7 },
   },
   opinet: { dailyLimit: 1_000 },
   search: {
@@ -37,6 +37,8 @@ export const config = {
     dailySpendPerPerson: 40_000, // 식비·입장료 1인 1일
     weights: { time: 0.4, cost: 0.3, poi: 0.3 },
     festivalBonus: 0.1,
+    /** 실측: 축제(15)에 연중 전시·상설 공연도 섞여 있다. 이보다 긴 행사는 "장기 행사"로 표시만 하고 보너스에서 뺀다 */
+    festivalMaxDays: 31,
   },
 } as const;
 

@@ -22,18 +22,13 @@ try {
 
 class CountingRouter implements Router {
   source = "mock" as const;
-  calls = { directions: 0, destinations: 0, future: 0 };
+  calls = { directions: 0, future: 0 };
   inner = new MockRouter();
   fail = false;
   async directions(o: Parameters<Router["directions"]>[0], d: Parameters<Router["directions"]>[1]) {
     this.calls.directions++;
     if (this.fail) throw new QuotaGuardError("directions", 8000, 10000);
     return this.inner.directions(o, d);
-  }
-  async destinations(o: Parameters<Router["destinations"]>[0], d: Parameters<Router["destinations"]>[1]) {
-    this.calls.destinations++;
-    if (this.fail) throw new Error("network down");
-    return this.inner.destinations(o, d);
   }
   async future(o: Parameters<Router["future"]>[0], d: Parameters<Router["future"]>[1]) {
     this.calls.future++;
@@ -51,7 +46,7 @@ const input = compareInputSchema.parse({
   budget: 300_000,
   prefs: ["nature"],
 });
-const wipe = () => db.execute(sql`DELETE FROM api_cache WHERE namespace IN ('compare', 'kakao:destinations', 'kakao:directions', 'kakao:future')`);
+const wipe = () => db.execute(sql`DELETE FROM api_cache WHERE namespace IN ('compare', 'kakao:directions', 'kakao:future')`);
 
 describe.skipIf(!ready)("runCompare (DB 통합)", () => {
   beforeAll(wipe);
@@ -62,8 +57,8 @@ describe.skipIf(!ready)("runCompare (DB 통합)", () => {
     const r = new CountingRouter();
     const first = await runCompare(input, r);
     const after1 = { ...r.calls };
-    expect(after1.destinations).toBeGreaterThan(0);
-    expect(after1.directions).toBeLessThanOrEqual(20);
+    expect(after1.directions).toBeGreaterThan(0);
+    expect(after1.directions).toBeLessThanOrEqual(40);
     expect(after1.future).toBeLessThanOrEqual(10);
     expect(first.candidates.length).toBeGreaterThan(0);
 
@@ -79,7 +74,7 @@ describe.skipIf(!ready)("runCompare (DB 통합)", () => {
     const r = new CountingRouter();
     const res = await runCompare({ ...input, budget: 123_000 }, r);
     expect(res.fromCache).toBe(false);
-    expect(r.calls).toEqual({ directions: 0, destinations: 0, future: 0 });
+    expect(r.calls).toEqual({ directions: 0, future: 0 });
   });
 
   it("외부 API 장애 시 만료 캐시로 응답하고 stale 표시", async () => {
@@ -91,7 +86,23 @@ describe.skipIf(!ready)("runCompare (DB 통합)", () => {
     const res = await runCompare({ ...input, budget: 222_000 }, r);
     expect(res.stale).toBe(true);
     expect(res.candidates.some((c) => c.route.stale)).toBe(true);
-    expect(res.calls.destinations!.failed).toBeGreaterThan(0);
+    expect(res.calls.directions!.blocked).toBeGreaterThan(0);
+  });
+
+  it("상위 40곳만 실측, 나머지는 실측/추정 비율로 보정된 추정", async () => {
+    const { runCompare } = await import("@/lib/compare");
+    await wipe();
+    const res = await runCompare({ ...input, budget: 333_000 }, new CountingRouter());
+    const live = res.candidates.filter((c) => c.route.source === "mock");
+    const est = res.candidates.filter((c) => c.route.source === "estimate");
+    expect(live.length).toBeLessThanOrEqual(40);
+    expect(live.every((c) => c.tollStatus === "calculated")).toBe(true);
+    if (est.length) {
+      expect(est.every((c) => c.route.calibrated && c.tollStatus === "not_calculated")).toBe(true);
+      // MockRouter 도로 계수 1.35 vs 추정 1.3 → 보정 후 거리 ≈ 직선 × 1.35
+      const c = est[0]!;
+      expect(c.route.distanceKm / c.straightKm).toBeCloseTo(1.35, 1);
+    }
   });
 
   it("캐시도 없고 외부도 실패하면 직선거리 추정으로 표시", async () => {
@@ -101,7 +112,7 @@ describe.skipIf(!ready)("runCompare (DB 통합)", () => {
     r.fail = true;
     const res = await runCompare({ ...input, budget: 111_000 }, r);
     expect(res.candidates.length).toBeGreaterThan(0);
-    expect(res.candidates.every((c) => c.route.source === "estimate")).toBe(true);
+    expect(res.candidates.every((c) => c.route.source === "estimate" && !c.route.calibrated)).toBe(true);
     expect(res.candidates.every((c) => c.tollStatus === "not_calculated")).toBe(true);
     expect(res.calls.directions!.blocked).toBeGreaterThan(0);
   });

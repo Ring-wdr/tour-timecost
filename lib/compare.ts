@@ -1,20 +1,21 @@
 /**
- * 비교 계산 (4장 절차).
- * 1) 직선거리 필터 → 2) 다중 목적지(30개씩, 캐시 7일) → 3) 점수 상위 20곳 단건 길찾기로 통행료(캐시 30일)
- * → 4) 상위 10곳 미래 운행 정보(토요일 09:00, 쿼터 여유 시) → 비용·점수.
- * 외부 API 실패/쿼터 차단 시: 만료된 캐시("최신 아님") → 없으면 직선거리 추정.
+ * 비교 계산 (4장 절차, 다중 목적지 반경 제한 때문에 2~3단계를 바꿈 — docs/api-notes.md §2).
+ * 1) 직선거리 필터 → 2) 전 후보 직선거리 추정 → 3) 예비 점수 상위 40곳 자동차 길찾기(거리·시간·통행료, 캐시 30일)
+ * → 4) 나머지 추정을 실측 비율로 보정 → 5) 상위 10곳 미래 운행 정보(선택 날짜 09:00) → 비용·점수.
+ * 외부 API 실패/쿼터 차단 시: 만료된 캐시("최신 아님") → 없으면 보정 없는 직선거리 추정.
  */
 import { sql } from "drizzle-orm";
-import { cacheKey, getCache, getManyCache, setCache } from "@/lib/cache";
+import { cacheKey, getCache, setCache } from "@/lib/cache";
 import { config } from "@/lib/config";
 import { PREF_TYPES, type CompareInput } from "@/lib/compare-input";
 import { estimateCost, tripDays, type CostBreakdown } from "@/lib/cost";
 import { db } from "@/lib/db";
-import { roundCoord } from "@/lib/geo";
+import { islandOf, roundCoord } from "@/lib/geo";
 import { latestGasolinePrice } from "@/lib/jobs";
-import { createRouter, QuotaGuardError, type DirectionsSummary, type RouteSummary, type Router } from "@/lib/routing/kakao";
+import { estimateRoute, median } from "@/lib/routing/estimate";
+import { createRouter, QuotaGuardError, type DirectionsSummary, type Router } from "@/lib/routing/kakao";
 import { scoreCandidates, type Scored } from "@/lib/scoring";
-import { isTourMock } from "@/lib/env";
+import { tourDataSource } from "@/lib/ingest";
 
 export type RouteSource = "live" | "mock" | "estimate";
 
@@ -25,12 +26,13 @@ export interface Candidate {
   lon: number;
   lat: number;
   straightKm: number;
-  route: { distanceKm: number; durationS: number; source: RouteSource; stale: boolean };
+  /** source=estimate면 직선거리 추정 (calibrated: 실측 비율로 보정됨) */
+  route: { distanceKm: number; durationS: number; source: RouteSource; stale: boolean; calibrated: boolean };
   weekend: { durationS: number; departure: string; stale: boolean } | null;
   tollStatus: "calculated" | "not_calculated";
   cost: CostBreakdown;
   poi: { typeCounts: Record<string, number>; preferredCount: number; imageRatio: number; petCount: number; lodgingCount: number };
-  festivals: { contentId: string; title: string; startDate: string; endDate: string }[];
+  festivals: { contentId: string; title: string; startDate: string; endDate: string; longRunning: boolean }[];
   imageUrl: string | null;
   scoreInput: { durationS: number; totalCost: number; poiCount: number; hasFestival: boolean };
   score: Scored;
@@ -86,7 +88,7 @@ export function compareCacheKey(input: CompareInput, routingSource: string) {
   void _w;
   // 기본값이 바뀌면 캐시도 갈리도록 해석된 값과 버전을 키에 넣는다
   return cacheKey("compare", {
-    v: 2,
+    v: 4,
     ...rest,
     origin: roundCoord(origin),
     routingSource,
@@ -100,7 +102,7 @@ export async function runCompare(input: CompareInput, router: Router = createRou
   const hit = await getCache<CompareResult>(resultKey);
   if (hit) {
     console.log(`[compare] 결과 캐시 HIT ${resultKey} (외부 API 호출 없음)`);
-    const zero = { destinations: newCounter(), directions: newCounter(), future: newCounter() };
+    const zero = { directions: newCounter(), future: newCounter() };
     return rescore({ ...hit.value, fromCache: true, calls: zero }, input);
   }
   console.log(`[compare] 결과 캐시 MISS ${resultKey}`);
@@ -109,7 +111,7 @@ export async function runCompare(input: CompareInput, router: Router = createRou
   const { days } = tripDays(input.tripType);
   const tripDates = Array.from({ length: days }, (_, i) => addDays(input.date, i));
   const maxKm = input.maxOneWayKm ?? config.search.maxOneWayKm[input.tripType];
-  const calls: CompareResult["calls"] = { destinations: newCounter(), directions: newCounter(), future: newCounter() };
+  const calls: CompareResult["calls"] = { directions: newCounter(), future: newCounter() };
   let anyStale = false;
 
   // 가정값
@@ -134,51 +136,8 @@ export async function runCompare(input: CompareInput, router: Router = createRou
   const byDistance = rows.length - near.length - tooClose;
   console.log(`[compare] 후보 ${rows.length}곳 중 직선 ${minKm}~${maxKm}km ${near.length}곳`);
 
-  // 2) 다중 목적지 (캐시 우선, 미스만 30개씩 호출)
-  const destKey = (code: string) => cacheKey("kakao:destinations", { src: router.source, o: origin, d: code });
-  const fresh = await getManyCache<RouteSummary>(near.map((r) => destKey(r.code)));
-  const routes = new Map<string, { s: RouteSummary; source: RouteSource; stale: boolean }>();
-  const misses: RegionRow[] = [];
-  for (const r of near) {
-    const c = fresh.get(destKey(r.code));
-    if (c) {
-      routes.set(r.code, { s: c.value, source: router.source, stale: false });
-      calls.destinations!.cached++;
-    } else misses.push(r);
-  }
-  for (let i = 0; i < misses.length; i += config.kakao.multiBatchSize) {
-    const batch = misses.slice(i, i + config.kakao.multiBatchSize);
-    try {
-      const res = await router.destinations(
-        origin,
-        batch.map((r) => ({ lon: r.lon, lat: r.lat, key: r.code })),
-      );
-      calls.destinations!.fetched += batch.length;
-      for (const r of batch) {
-        const s = res.get(r.code) ?? { ok: false, resultCode: -1, distanceM: null, durationS: null };
-        routes.set(r.code, { s, source: router.source, stale: false });
-        await setCache(destKey(r.code), "kakao:destinations", s, config.kakao.ttlDays.destinations * DAY_MS / 1000);
-      }
-    } catch (e) {
-      const blocked = e instanceof QuotaGuardError;
-      console.warn(`[compare] 다중 목적지 실패(${batch.length}곳): ${(e as Error).message}`);
-      const stale = await getManyCache<RouteSummary>(batch.map((r) => destKey(r.code)), { allowStale: true });
-      for (const r of batch) {
-        const c = stale.get(destKey(r.code));
-        if (c) {
-          routes.set(r.code, { s: c.value, source: router.source, stale: true });
-          anyStale = true;
-        } else {
-          routes.set(r.code, { s: estimateRoute(r.straight_km), source: "estimate", stale: false });
-        }
-        if (blocked) calls.destinations!.blocked++;
-        else calls.destinations!.failed++;
-      }
-    }
-  }
-  console.log(`[routing] 다중 목적지: 캐시 ${calls.destinations!.cached}곳, 외부 호출 ${calls.destinations!.fetched}곳 (${Math.ceil(calls.destinations!.fetched / config.kakao.multiBatchSize)}회)`);
-
-  // 후보 조립
+  // 2) 모든 후보는 먼저 직선거리 기반 추정으로 채운다.
+  //    카카오 다중 목적지·다중 출발지는 radius 최대 10km(공식 문서)라 20~400km 비교에 쓸 수 없다.
   const festivals = await db.execute<{ region_code: string; content_id: string; title: string; start_date: string; end_date: string }>(sql`
     SELECT region_code, content_id, title, start_date::text, end_date::text FROM festivals
     WHERE start_date <= ${tripDates.at(-1)!} AND end_date >= ${tripDates[0]!} AND region_code IS NOT NULL
@@ -188,23 +147,23 @@ export async function runCompare(input: CompareInput, router: Router = createRou
   const scoreTypes = prefTypes.length ? prefTypes : [12, 14, 28];
 
   const unreachable: string[] = [];
-  const candidates: Candidate[] = [];
+  let candidates: Candidate[] = [];
   for (const r of near) {
-    const route = routes.get(r.code)!;
-    if (!route.s.ok || route.s.distanceM === null || route.s.durationS === null) {
+    if (islandOf(r) !== islandOf(origin)) {
       unreachable.push(`${r.sido_name} ${r.name}`);
       continue;
     }
+    const est = estimateRoute(r.straight_km);
     const preferredCount = scoreTypes.reduce((s, t) => s + (r.type_counts[String(t)] ?? 0), 0);
     const fest = festivals.filter((f) => f.region_code === r.code);
-    const c: Candidate = {
+    candidates.push({
       code: r.code,
       name: r.name,
       sidoName: r.sido_name,
       lon: r.lon,
       lat: r.lat,
       straightKm: Math.round(r.straight_km * 10) / 10,
-      route: { distanceKm: route.s.distanceM / 1000, durationS: route.s.durationS, source: route.source, stale: route.stale },
+      route: { distanceKm: est.distanceKm, durationS: est.durationS, source: "estimate", stale: false, calibrated: false },
       weekend: null,
       tollStatus: "not_calculated",
       cost: null as unknown as CostBreakdown,
@@ -215,12 +174,17 @@ export async function runCompare(input: CompareInput, router: Router = createRou
         petCount: r.pet_count,
         lodgingCount: r.type_counts["32"] ?? 0,
       },
-      festivals: fest.map((f) => ({ contentId: f.content_id, title: f.title, startDate: f.start_date, endDate: f.end_date })),
+      festivals: fest.map((f) => ({
+        contentId: f.content_id,
+        title: f.title,
+        startDate: f.start_date,
+        endDate: f.end_date,
+        longRunning: (Date.parse(f.end_date) - Date.parse(f.start_date)) / DAY_MS > config.defaults.festivalMaxDays,
+      })),
       imageUrl: r.image_url,
       scoreInput: { durationS: 0, totalCost: 0, poiCount: 0, hasFestival: false },
       score: null as unknown as Scored,
-    };
-    candidates.push(c);
+    });
   }
 
   const costOf = (c: Candidate, toll: number | null) =>
@@ -237,21 +201,40 @@ export async function runCompare(input: CompareInput, router: Router = createRou
     });
   for (const c of candidates) c.cost = costOf(c, null);
 
-  // 3) 점수 상위 20곳 통행료
-  const ranked = scoreAll(candidates, input, festivalBonus);
-  const topToll = ranked.slice(0, config.kakao.tollTopN);
-  for (const c of topToll) {
+  // 3) 예비 점수 상위 N곳만 자동차 길찾기 단건 → 실제 거리·시간·통행료 (캐시 30일)
+  const ratios = { d: [] as number[], t: [] as number[] };
+  const noRoute = new Set<string>();
+  for (const c of scoreAll(candidates, input, festivalBonus).slice(0, config.kakao.routeTopN)) {
     const key = cacheKey("kakao:directions", { src: router.source, o: origin, d: c.code });
     const r = await cachedCall<DirectionsSummary>(key, "kakao:directions", config.kakao.ttlDays.directions, calls.directions!, () =>
       router.directions(origin, { lon: c.lon, lat: c.lat }),
     );
-    if (r?.value.ok && r.value.tollWon !== null) {
-      c.cost = costOf(c, r.value.tollWon);
-      c.tollStatus = "calculated";
-      if (r.stale) anyStale = true;
+    if (!r) continue; // 외부 실패 + 캐시 없음 → 추정 유지
+    if (!r.value.ok || r.value.distanceM === null || r.value.durationS === null) {
+      noRoute.add(c.code);
+      unreachable.push(`${c.sidoName} ${c.name}`);
+      continue;
+    }
+    ratios.d.push(r.value.distanceM / 1000 / c.route.distanceKm);
+    ratios.t.push(r.value.durationS / c.route.durationS);
+    c.route = { distanceKm: r.value.distanceM / 1000, durationS: r.value.durationS, source: router.source, stale: r.stale, calibrated: false };
+    c.cost = costOf(c, r.value.tollWon);
+    c.tollStatus = "calculated";
+    if (r.stale) anyStale = true;
+  }
+  candidates = candidates.filter((c) => !noRoute.has(c.code));
+  console.log(`[routing] 자동차 길찾기 상위 ${config.kakao.routeTopN}곳: 캐시 ${calls.directions!.cached}, 외부 호출 ${calls.directions!.fetched}`);
+
+  // 4) 나머지 추정치를 이번 출발지의 실측/추정 비율 중앙값으로 보정 (표본 3개 이상일 때)
+  const kd = ratios.d.length >= 3 ? median(ratios.d) : null;
+  const kt = ratios.t.length >= 3 ? median(ratios.t) : null;
+  if (kd && kt) {
+    for (const c of candidates) {
+      if (c.route.source !== "estimate") continue;
+      c.route = { ...c.route, distanceKm: c.route.distanceKm * kd, durationS: Math.round(c.route.durationS * kt), calibrated: true };
+      c.cost = costOf(c, null);
     }
   }
-  console.log(`[routing] 통행료 단건: 캐시 ${calls.directions!.cached}, 외부 호출 ${calls.directions!.fetched}`);
 
   // 4) 상위 10곳 주말 출발 소요시간 (선택 날짜 09:00, 미래일 때만)
   const departureIso = `${input.date}T09:00:00+09:00`;
@@ -275,7 +258,7 @@ export async function runCompare(input: CompareInput, router: Router = createRou
     generatedAt: new Date().toISOString(),
     fromCache: false,
     stale: anyStale || candidates.some((c) => c.route.stale),
-    sources: { tour: isTourMock() ? "mock" : "live", routing: router.source },
+    sources: { tour: (await tourDataSource()) ?? "mock", routing: router.source },
     assumptions: {
       fuelPricePerLiter: fuelPrice,
       fuelPriceSource,
@@ -296,12 +279,6 @@ export async function runCompare(input: CompareInput, router: Router = createRou
   };
   await setCache(resultKey, "compare", result, config.search.resultCacheMinutes * 60);
   return result;
-}
-
-/** 직선거리 기반 추정 (외부 API 불가 + 캐시 없음). 도로 계수 1.3, 평균 60km/h */
-function estimateRoute(straightKm: number): RouteSummary {
-  const km = straightKm * 1.3;
-  return { ok: true, resultCode: 0, distanceM: Math.round(km * 1000), durationS: Math.round((km / 60) * 3600) };
 }
 
 async function cachedCall<T>(
@@ -340,7 +317,7 @@ function scoreAll(candidates: Candidate[], input: CompareInput, festivalBonus: n
       durationS: c.route.durationS,
       totalCost: c.cost.total,
       poiCount: poiCountFor(c, input),
-      hasFestival: c.festivals.length > 0,
+      hasFestival: c.festivals.some((f) => !f.longRunning),
     };
   }
   const scored = scoreCandidates(
