@@ -41,9 +41,9 @@ describe("필드 파서", () => {
     expect(parseCoord("37.8", "127.5")).toBeNull(); // x/y 뒤바뀜
   });
   it("반려동물 동반 구분 해석", () => {
-    expect(parsePetAllowed({ contentid: "1", acmpyTypeCd: "일부구역 동반가능" })).toBe(true);
-    expect(parsePetAllowed({ contentid: "1", acmpyTypeCd: "동반불가" })).toBe(false);
-    expect(parsePetAllowed({ contentid: "1" })).toBeNull();
+    expect(parsePetAllowed({ acmpyTypeCd: "일부구역 동반가능" })).toBe(true);
+    expect(parsePetAllowed({ acmpyTypeCd: "동반불가" })).toBe(false);
+    expect(parsePetAllowed({})).toBeNull();
     expect(parsePetAllowed(undefined)).toBeNull();
   });
   it("시군구 코드는 시도+시군구", () => {

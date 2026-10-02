@@ -90,7 +90,7 @@ export function parseCoord(mapx?: string, mapy?: string): { lon: number; lat: nu
 }
 
 /** 반려동물 동반 구분 텍스트 → 가능 여부. 코드 체계 미확인이라 보수적으로 해석 */
-export function parsePetAllowed(item: PetItem | undefined): boolean | null {
+export function parsePetAllowed(item: { acmpyTypeCd?: string } | undefined): boolean | null {
   if (!item) return null;
   const t = item.acmpyTypeCd;
   if (!t) return null;
