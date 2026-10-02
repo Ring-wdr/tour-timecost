@@ -37,6 +37,7 @@ function KakaoMap({ origin, items, selected, onSelect, onFail }: Props & { onFai
   const ref = useRef<HTMLDivElement>(null);
   const mapRef = useRef<unknown>(null);
   const overlays = useRef<{ setMap(m: unknown): void }[]>([]);
+  const fittedFor = useRef<Item[] | null>(null);
   const [ready, setReady] = useState(false);
 
   useEffect(() => {
@@ -70,8 +71,11 @@ function KakaoMap({ origin, items, selected, onSelect, onFail }: Props & { onFai
         new maps.CustomOverlay({ position: p, content: markerEl(it, it.code === selected, onSelect), map, zIndex: it.code === selected ? 10 : 1 }),
       );
     }
-    map.setBounds(bounds);
-    // selected 변경 시에는 bounds를 다시 맞추지 않도록 items 기준으로만
+    // 목록이 바뀔 때만 화면을 맞춘다 (항목 hover로 선택만 바뀌면 사용자가 옮긴 화면 유지)
+    if (fittedFor.current !== items) {
+      map.setBounds(bounds);
+      fittedFor.current = items;
+    }
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [ready, items, selected]);
 

@@ -86,7 +86,7 @@ export function SearchForm({ defaultDate, defaults, geocodeEnabled }: Props) {
             </select>
           </div>
           <div>
-            <label htmlFor="addr">주소 검색</label>
+            <label htmlFor="addr">주소·장소 검색</label>
             <div className="row">
               <input
                 id="addr"
@@ -99,7 +99,7 @@ export function SearchForm({ defaultDate, defaults, geocodeEnabled }: Props) {
                     if (geocodeEnabled && query) void searchAddress();
                   }
                 }}
-                placeholder={geocodeEnabled ? "예: 서울 마포구 월드컵로" : "카카오 REST 키 설정 시 사용 가능"}
+                placeholder={geocodeEnabled ? "주소나 장소명 (예: 서울 마포구 월드컵로, 강릉역)" : "카카오 REST 키 설정 시 사용 가능"}
                 disabled={!geocodeEnabled}
                 className="grow"
               />

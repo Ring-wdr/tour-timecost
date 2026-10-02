@@ -28,7 +28,11 @@ export function ResultsView({ result, input }: { result: CompareResult; input: C
     return scored.map((s) => ({ ...byId.get(s.id)!, score: s }));
   }, [result, weights]);
 
-  const visible = ranked.filter((c) => showOver || !c.cost.overBudget);
+  const visible = useMemo(() => ranked.filter((c) => showOver || !c.cost.overBudget), [ranked, showOver]);
+  const mapItems = useMemo(
+    () => visible.slice(0, 30).map((c, i) => ({ code: c.code, name: c.name, lon: c.lon, lat: c.lat, rank: i + 1 })),
+    [visible],
+  );
   const overCount = ranked.filter((c) => c.cost.overBudget).length;
 
   function changeWeight(k: keyof Weights, v: number) {
@@ -194,7 +198,7 @@ export function ResultsView({ result, input }: { result: CompareResult; input: C
         <aside className="map-col" aria-label="지도">
           <ResultMap
             origin={input.origin}
-            items={visible.slice(0, 30).map((c, i) => ({ code: c.code, name: c.name, lon: c.lon, lat: c.lat, rank: i + 1 }))}
+            items={mapItems}
             selected={selected}
             onSelect={setSelected}
           />
