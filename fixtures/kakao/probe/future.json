@@ -1,0 +1,49 @@
+{
+ "recordedAt": "2026-10-02T15:19:54.044Z",
+ "request": {
+  "url": "https://apis-navi.kakaomobility.com/v1/future/directions?origin=126.978,37.5665&destination=127.51,37.831&departure_time=202610090900&summary=true",
+  "method": "GET"
+ },
+ "status": 200,
+ "body": {
+  "trans_id": "01a0fd334d0e7c369816a46612cbbbf3",
+  "routes": [
+   {
+    "result_code": 0,
+    "result_msg": "길찾기 성공",
+    "summary": {
+     "origin": {
+      "name": "",
+      "x": 126.97799195888547,
+      "y": 37.56649735000978
+     },
+     "destination": {
+      "name": "",
+      "x": 127.5099932385272,
+      "y": 37.83099224065375
+     },
+     "waypoints": [],
+     "priority": "RECOMMEND",
+     "bound": {
+      "min_x": 126.97725602697989,
+      "min_y": 37.56650899756861,
+      "max_x": 127.5133407459311,
+      "max_y": 37.83156475774446
+     },
+     "fare": {
+      "taxi": 87900,
+      "toll": 0
+     },
+     "distance": 68317,
+     "duration": 8782
+    },
+    "sections": [
+     {
+      "distance": 68317,
+      "duration": 8169
+     }
+    ]
+   }
+  ]
+ }
+}

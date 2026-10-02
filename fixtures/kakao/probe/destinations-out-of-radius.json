@@ -1,0 +1,33 @@
+{
+ "recordedAt": "2026-10-02T15:19:52.611Z",
+ "request": {
+  "url": "https://apis-navi.kakaomobility.com/v1/destinations/directions",
+  "method": "POST",
+  "body": {
+   "origin": {
+    "x": 126.978,
+    "y": 37.5665
+   },
+   "destinations": [
+    {
+     "x": 129.225,
+     "y": 35.856,
+     "key": "47130"
+    }
+   ],
+   "radius": 10000,
+   "priority": "TIME"
+  }
+ },
+ "status": 200,
+ "body": {
+  "trans_id": "01a0fd334c077fa6b8ed1d453640f6a2",
+  "routes": [
+   {
+    "result_code": 304,
+    "result_msg": "다중 목적지: 목적지가 설정한 길 찾기 반경 범위를 벗어남",
+    "key": "47130"
+   }
+  ]
+ }
+}

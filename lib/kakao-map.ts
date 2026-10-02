@@ -29,14 +29,24 @@ export function loadKakaoMaps(): Promise<KakaoMaps> {
   if (!KAKAO_JS_KEY) return Promise.reject(new Error("NEXT_PUBLIC_KAKAO_JS_KEY 없음"));
   if (loading) return loading;
   loading = new Promise((resolve, reject) => {
+    const fail = (msg: string) => {
+      loading = null;
+      clearTimeout(timer);
+      reject(new Error(msg));
+    };
+    // 도메인 미등록·서비스 비활성 시 SDK가 오류 본문을 주고 kakao 객체를 만들지 않는다 → 시간 제한으로 대체 UI
+    const timer = setTimeout(() => fail("카카오 지도 SDK 시간 초과"), 8000);
     const s = document.createElement("script");
     s.src = `https://dapi.kakao.com/v2/maps/sdk.js?appkey=${KAKAO_JS_KEY}&autoload=false`;
     s.async = true;
-    s.onload = () => window.kakao!.maps.load(() => resolve(window.kakao!.maps));
-    s.onerror = () => {
-      loading = null;
-      reject(new Error("카카오 지도 SDK 로드 실패"));
+    s.onload = () => {
+      if (!window.kakao?.maps) return fail("카카오 지도 SDK 초기화 실패 (도메인 등록·카카오맵 사용 설정 확인)");
+      window.kakao.maps.load(() => {
+        clearTimeout(timer);
+        resolve(window.kakao!.maps);
+      });
     };
+    s.onerror = () => fail("카카오 지도 SDK 로드 실패");
     document.head.appendChild(s);
   });
   return loading;

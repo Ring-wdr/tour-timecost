@@ -1,0 +1,17 @@
+{
+ "recordedAt": "2026-10-02T15:19:54.321Z",
+ "request": {
+  "url": "https://apis-navi.kakaomobility.com/v1/directions?origin=126.978,37.5665&destination=126.978,37.5665&summary=true",
+  "method": "GET"
+ },
+ "status": 200,
+ "body": {
+  "trans_id": "01a0fd3352a67a0992326acb91d98a12",
+  "routes": [
+   {
+    "result_code": 104,
+    "result_msg": "출발지와 도착지가 5 m 이내로 설정된 경우 경로를 탐색할 수 없음"
+   }
+  ]
+ }
+}

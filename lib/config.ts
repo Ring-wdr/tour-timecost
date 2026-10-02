@@ -21,6 +21,8 @@ export const config = {
     /** 예비 점수 상위 N곳만 자동차 길찾기 단건 (다중 목적지는 반경 10km 제한으로 사용 불가) */
     routeTopN: 40,
     futureTopN: 10,
+    /** 동시 요청 수 (단건 호출 1회 약 1초) */
+    concurrency: 8,
     ttlDays: { directions: 30, future: 7 },
   },
   opinet: { dailyLimit: 1_000 },

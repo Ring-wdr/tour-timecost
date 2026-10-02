@@ -15,6 +15,13 @@
       "when": 1790953829802,
       "tag": "0001_region_parent",
       "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "7",
+      "when": 1790954525786,
+      "tag": "0002_region_route_point",
+      "breakpoints": true
     }
   ]
 }

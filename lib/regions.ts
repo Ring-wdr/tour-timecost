@@ -55,6 +55,16 @@ export async function computeRegions() {
     LEFT JOIN tc ON tc.region_code = r2.code
     WHERE r.code = r2.code
   `);
+  await db.execute(sql`
+    UPDATE regions r SET route_lon = coalesce(np.lon, r.lon), route_lat = coalesce(np.lat, r.lat)
+    FROM regions r2
+    LEFT JOIN LATERAL (
+      SELECT p.lon, p.lat FROM pois p
+      WHERE p.region_code = r2.code AND p.content_type_id IN (39, 32, 14) AND p.geom IS NOT NULL
+      ORDER BY p.geom <-> r2.geom LIMIT 1
+    ) np ON true
+    WHERE r.code = r2.code AND r2.geom IS NOT NULL
+  `);
   const rows = await db.execute<{ code: string; name: string; sido_name: string; is_candidate: boolean; excluded_reason: string | null }>(
     sql`SELECT code, name, sido_name, is_candidate, excluded_reason FROM regions ORDER BY code`,
   );

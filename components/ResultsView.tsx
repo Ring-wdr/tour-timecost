@@ -117,7 +117,7 @@ export function ResultsView({ result, input }: { result: CompareResult; input: C
                 <div className="rank" aria-label={`${i + 1}위`}>{i + 1}</div>
                 {c.imageUrl ? (
                   // eslint-disable-next-line @next/next/no-img-element
-                  <img src={c.imageUrl} alt="" loading="lazy" />
+                  <img src={c.imageUrl} alt="" loading="lazy" onError={(e) => (e.currentTarget.style.visibility = "hidden")} />
                 ) : (
                   <div className="noimg" aria-hidden>이미지 없음</div>
                 )}

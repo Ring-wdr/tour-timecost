@@ -108,7 +108,9 @@ function SvgMap({ origin, items, selected, onSelect }: Props) {
           );
         })}
       </svg>
-      <p className="small muted" style={{ margin: "4px 8px" }}>카카오 지도 키가 없어 개략도로 표시합니다.</p>
+      <p className="small muted" style={{ margin: "4px 8px" }}>
+        {KAKAO_JS_KEY ? "카카오 지도를 불러오지 못해 개략도로 표시합니다." : "카카오 지도 키가 없어 개략도로 표시합니다."}
+      </p>
     </div>
   );
 }

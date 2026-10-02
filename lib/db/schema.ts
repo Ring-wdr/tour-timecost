@@ -33,6 +33,9 @@ export const regions = pgTable("regions", {
   lon: doublePrecision("lon"),
   lat: doublePrecision("lat"),
   geom: geographyPoint("geom").generatedAlwaysAs(pointFromLonLat),
+  /** 길찾기 목적지: 대표 좌표에서 가장 가까운 음식점·숙박·문화시설 (실측: 중앙값 좌표는 도로가 없는 곳일 수 있음, result_code 103) */
+  routeLon: doublePrecision("route_lon"),
+  routeLat: doublePrecision("route_lat"),
   isCandidate: boolean("is_candidate").notNull().default(false),
   excludedReason: text("excluded_reason"),
   /** 콘텐츠 타입 ID → 개수 */

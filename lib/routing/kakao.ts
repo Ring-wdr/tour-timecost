@@ -11,7 +11,7 @@ import { z } from "zod";
 import { config } from "@/lib/config";
 import { env, isKakaoMock } from "@/lib/env";
 import { haversineKm, islandOf, type LonLat } from "@/lib/geo";
-import { addUsage, getUsage } from "@/lib/usage";
+import { addUsage } from "@/lib/usage";
 
 export type KakaoApi = "directions" | "future";
 
@@ -43,9 +43,9 @@ export interface Router {
 /** 쿼터 확인 후 사용량 증가. mock은 쿼터를 쓰지 않는다. */
 export async function guardQuota(api: KakaoApi) {
   const limit = config.kakao.dailyLimits[api];
-  const used = await getUsage(`kakao:${api}`);
-  if (used >= limit * config.kakao.guardRatio) throw new QuotaGuardError(api, used, limit);
-  await addUsage(`kakao:${api}`);
+  // 동시 호출에서도 넘지 않도록 먼저 원자적으로 올리고 확인한다 (차단된 시도도 1건으로 세어 보수적)
+  const used = await addUsage(`kakao:${api}`);
+  if (used > limit * config.kakao.guardRatio) throw new QuotaGuardError(api, used - 1, limit);
 }
 
 const xy = (p: LonLat) => `${p.lon},${p.lat}`;
@@ -67,7 +67,7 @@ const directionsSchema = z.object({
     .min(1),
 });
 
-function toDirections(json: unknown): DirectionsSummary {
+export function parseDirections(json: unknown): DirectionsSummary {
   const r = directionsSchema.parse(json).routes[0]!;
   const ok = r.result_code === 0 && !!r.summary;
   return {
@@ -95,12 +95,12 @@ class LiveRouter implements Router {
 
   async directions(origin: LonLat, dest: LonLat) {
     await guardQuota("directions");
-    return toDirections(await this.request(`/v1/directions?origin=${xy(origin)}&destination=${xy(dest)}&summary=true`));
+    return parseDirections(await this.request(`/v1/directions?origin=${xy(origin)}&destination=${xy(dest)}&summary=true`));
   }
 
   async future(origin: LonLat, dest: LonLat, departure: string) {
     await guardQuota("future");
-    return toDirections(
+    return parseDirections(
       await this.request(`/v1/future/directions?origin=${xy(origin)}&destination=${xy(dest)}&departure_time=${departure}&summary=true`),
     );
   }

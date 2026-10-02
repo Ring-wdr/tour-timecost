@@ -22,7 +22,13 @@ export async function GET(req: Request) {
       headers: { Authorization: `KakaoAK ${env.KAKAO_REST_KEY}` },
       signal: AbortSignal.timeout(10_000),
     });
-    const data = schema.parse(await res.json());
+    const json = await res.json();
+    if (!res.ok) {
+      // 예: {"errorType":"NotAuthorizedError","message":"App(...) disabled OPEN_MAP_AND_LOCAL service."} → 콘솔에서 카카오맵(로컬) 사용 설정 필요
+      const msg = (json as { message?: string }).message ?? `HTTP ${res.status}`;
+      return NextResponse.json({ error: `카카오 주소 검색 거부: ${msg}` }, { status: 502 });
+    }
+    const data = schema.parse(json);
     const out = { results: data.documents.map((d) => ({ label: d.address_name, lon: d.x, lat: d.y })) };
     await setCache(key, "kakao:geocode", out, 30 * 86_400);
     return NextResponse.json(out);
